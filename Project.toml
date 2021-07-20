@@ -1,0 +1,13 @@
+name = "DiscgolfRecord"
+uuid = "a1e2c07e-dadb-424f-a631-52f9b79935f4"
+authors = ["Jacob Wood <jacob.wood27@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
