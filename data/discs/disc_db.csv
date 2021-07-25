@@ -1,0 +1,726 @@
+id,brand,mold,type,speed,glide,turn,fade
+LATITUDE_64_MISSILEN,Latitude 64,Missilen,Distance,15,3,-0.5,4.5
+LATITUDE_64_RAKETEN,Latitude 64,Raketen,Distance,15,4,-2,3
+AXIOM_EXCITE,Axiom Discs,Excite,Distance,14.5,5.5,-2,2
+AXIOM_TANTRUM,Axiom Discs,Tantrum,Distance,14.5,5,-1.5,3
+MVP_DIMENSION,MVP Disc Sports,Dimension,Distance,14.5,5,0,3
+MVP_LIMIT,MVP Disc Sports,Limit,Distance,14.5,3.5,0,4
+MVP_RELATIVITY,MVP Disc Sports,Relativity,Distance,14.5,5.5,-3,1.5
+MVP_TELEPORT,MVP Disc Sports,Teleport,Distance,14.5,5,-1.5,2.5
+AXIOM_DELIRIUM,Axiom Discs,Delirium,Distance,14.5,5,-0.5,3
+ABC_BEE_LINE,ABC Discs,Bee Line,Distance,14,5,-3,2
+DAREDEVIL_ALBATROSS,Daredevil Discs,Albatross,Distance,14,4,0,5
+DAREDEVIL_GRAY_JAY,Daredevil Discs,Gray Jay,Distance,14,4,0,5
+DAREDEVIL_MERLIN,Daredevil Discs,Merlin,Distance,14,4,-1,5
+DGA_TORRENT,Disc Golf Association,Torrent,Distance,14,5,-1,2
+DYNAMIC_FREEDOM,Dynamic Discs,Freedom,Distance,14,5,-3,3
+INNOVA_COLOSSUS,Innova,Colossus,Distance,14,5,-2,3
+INNOVA_CORVETTE,Innova,Corvette,Distance,14,6,-1,2
+INNOVA_FIRESTORM,Innova,Firestorm,Distance,14,4,0,3
+KASTAPLAST_RASK,Kastaplast,Rask,Distance,14,3,0,4
+LATITUDE_64_BALLISTA,Latitude 64,Ballista,Distance,14,5,-1,3
+LATITUDE_64_BALLISTA_PRO,Latitude 64,Ballista Pro,Distance,14,4,0,3
+LATITUDE_64_KNIGHT,Latitude 64,Knight,Distance,14,4,-1.5,4
+LEGACY_CANNON,Legacy Discs,Cannon,Distance,14,5,-3,3
+LEGACY_RAMPAGE,Legacy Discs,Rampage,Distance,14,5,-1,4
+VIKING_THUNDER_GOD_THOR,Viking Discs,Thunder God Thor,Distance,14,5,0,2
+WESTSIDE_CATAPULT,Westside Golf Discs,Catapult,Distance,14,4,-0.5,3
+WESTSIDE_DESTINY,Westside Golf Discs,Destiny,Distance,14,6,-2,3
+WESTSIDE_KING,Westside Golf Discs,King,Distance,14,5,-1.5,3
+WESTSIDE_KING_VIP_AIR,Westside Golf Discs,King VIP Air,Distance,14,5,-1.5,3
+WESTSIDE_QUEEN,Westside Golf Discs,Queen,Distance,14,5,-3,2
+WESTSIDE_WORLD,Westside Golf Discs,World,Distance,14,4,-0.5,3
+YIKUN_LU,Yikun Sports,Lu,Distance,14,5,-1,3
+AXIOM_MAYHEM,Axiom Discs,Mayhem,Distance,13,5,-1.5,2
+AXIOM_PANIC,Axiom Discs,Panic,Distance,13,4,-0.5,3
+AXIOM_TENACITY,Axiom Discs,Tenacity,Distance,13,5,-2.5,2
+DAREDEVIL_BIGFOOT,Daredevil Discs,Bigfoot,Distance,13,5,-2,2
+DGA_TEMPEST,Disc Golf Association,Tempest,Distance,13,5,-3,2
+DISCMANIA_DD2_FRENZY,Discmania,DD2 Frenzy,Distance,13,5,-2,2
+DISCRAFT_CRANK_SS,Discraft,Crank SS,Distance,13,5,-3,2
+DISCRAFT_NUKE,Discraft,Nuke,Distance,13,5,-1,3
+DISCRAFT_NUKE_OS,Discraft,Nuke OS,Distance,13,4,0,4
+DISCRAFT_NUKE_SS,Discraft,Nuke SS,Distance,13,5,-3,3
+DYNAMIC_CAPTAIN,Dynamic Discs,Captain,Distance,13,5,-2,2
+DYNAMIC_DEFENDER,Dynamic Discs,Defender,Distance,13,5,0,3
+DYNAMIC_SHERIFF,Dynamic Discs,Sheriff,Distance,13,5,-1,2
+FLY_HIGH_TRAIN_WRECK,Fly High Discs,Train Wreck,Distance,13,5,-2,2
+FULL_TURN_CRUISE,Full Turn Discs,Cruise,Distance,13,4,-2,3
+GATEWAY_SAMURAI,Gateway Disc Sports,Samurai,Distance,13,6,-2,1
+GATEWAY_SIREN,Gateway Disc Sports,Siren,Distance,13,5,-2,1
+GATEWAY_SLAYER,Gateway Disc Sports,Slayer,Distance,13,5,-1,2
+GURU_FENRIS,Guru Disc Golf,Fenris,Distance,13,5,-1,2
+INFINITE_PHARAOH,Infinite Discs,Pharaoh,Distance,13,6,-1,2
+INNOVA_APE,Innova,Ape,Distance,13,5,0,4
+INNOVA_BOSS,Innova,Boss,Distance,13,5,-1,3
+INNOVA_DAEDALUS,Innova,Daedalus,Distance,13,6,-3,2
+INNOVA_DOMINATOR,Innova,Dominator,Distance,13,5,-1,2
+INNOVA_GROOVE,Innova,Groove,Distance,13,6,-2,2
+INNOVA_KATANA,Innova,Katana,Distance,13,5,-3,3
+INNOVA_SHRYKE,Innova,Shryke,Distance,13,6,-2,2
+INNOVA_VULCAN,Innova,Vulcan,Distance,13,5,-4,2
+KASTAPLAST_GRYM,Kastaplast,Grym,Distance,13,5,-2,2
+KASTAPLAST_GRYM_X,Kastaplast,Grym X,Distance,13,5,-1,2
+LATITUDE_64_BOLT,Latitude 64,Bolt,Distance,13,6,-2,3
+LATITUDE_64_CUTLASS,Latitude 64,Cutlass,Distance,13,5,0,3.5
+LATITUDE_64_GLADIATOR,Latitude 64,Gladiator,Distance,13,5,0,3.5
+LATITUDE_64_HALO,Latitude 64,Halo,Distance,13,5,-0.5,3
+LATITUDE_64_HAVOC,Latitude 64,Havoc,Distance,13,5,-1,3
+LATITUDE_64_STILETTO,Latitude 64,Stiletto,Distance,13,3,0.5,5
+LEGACY_AFTERMATH,Legacy Discs,Aftermath,Distance,13,5,-2,3
+LEGACY_RECON,Legacy Discs,Recon,Distance,13,5,-1,3
+MILLENIUM_QUASAR,Millennium Golf Discs,Quasar,Distance,13,5,-1,4
+MILLENIUM_SCORPIUS,Millennium Golf Discs,Scorpius,Distance,13,4,-1,3
+MVP_CATALYST,MVP Disc Sports,Catalyst,Distance,13,5.5,-2,2
+MVP_ENERGY,MVP Disc Sports,Energy,Distance,13,4,0,4
+MVP_NITRO,MVP Disc Sports,Nitro,Distance,13,4,-0.5,3
+MVP_OCTANE,MVP Disc Sports,Octane,Distance,13,5,-1,2
+PRODIGY_X2,Prodigy Disc,X2,Distance,13,4,0,4
+PRODIGY_X4,Prodigy Disc,X4,Distance,13,5,-2.5,2
+PRODIGY_X5,Prodigy Disc,X5,Distance,13,5,-4,1
+PRODISCUS_FASTI,Prodiscus,FASTi,Distance,13,4,-2,3
+PRODISCUS_LEGENDA,Prodiscus,Legenda,Distance,13,5,-1,2
+RPM_KAHU,RPM Discs/Disc Golf Aotearoa,Kahu,Distance,13,5,-1.5,3
+WESTSIDE_GIANT,Westside Golf Discs,Giant,Distance,13,4,0,3.5
+WESTSIDE_GIANT_VIP_AIR,Westside Golf Discs,Giant VIP Air,Distance,13,4,0,3.5
+WESTSIDE_SORCERER,Westside Golf Discs,Sorcerer,Distance,13,5,-0.5,3
+WESTSIDE_WAR_HORSE,Westside Golf Discs,War Horse,Distance,13,4,0,4
+YIKUN_DA'E,Yikun Sports,Da'e,Distance,13,5,0,2
+MILLENNIUM_FALCON,Millennium,Falcon,Distance,13,5,0,0.3
+DYNAMIC_RAIDER,Dynamic Discs,Raider,Distance,13,5,-1,3
+DISCMANIA_ENIGMA,Discmania,Enigma,Distance,13,5,-1,3
+ABOVE_GROUND_LEVEL_CYPRESS,Above Ground Level,Cypress,Distance,12,5,-2,2
+AQUAFLIGHT_OSPREY,AquaFlight Discs,Osprey,Distance,12,4,-1,2
+ARSENAL_AIR_STRIKE,Arsenal Discs,Air Strike,Distance,12,5,-3,3
+BLACK_ZOMBIE_BERZERKER,Black Zombie Disc Golf,Berzerker,Distance,12,4,0,3
+DAREDEVIL_SASQUATCH,Daredevil Discs,Sasquatch,Distance,12,5,-5,1
+DAREDEVIL_YETI,Daredevil Discs,Yeti,Distance,12,6,-3,1
+DGA_HURRICANE,Disc Golf Association,Hurricane,Distance,12,5,-1,3
+DISCMANIA_DDX,Discmania,DDx,Distance,12,6,-1,2
+DISCMANIA_PD2_-_CHAOS,Discmania,PD2 - Chaos,Distance,12,4,0,4
+DISCRAFT_CRANK,Discraft,Crank,Distance,12,5,-1,2
+DISCRAFT_FORCE,Discraft,Force,Distance,12,5,0,3
+DISCRAFT_KONG,Discraft,Kong,Distance,12,5,-1,3
+DISCRAFT_PUNISHER,Discraft,Punisher,Distance,12,5,0,3
+DISCRAFT_THRASHER,Discraft,Thrasher,Distance,12,5,-3,2
+DYNAMIC_ENFORCER,Dynamic Discs,Enforcer,Distance,12,4,0.5,4
+DYNAMIC_TRESPASS,Dynamic Discs,Trespass,Distance,12,5,-0.5,3
+FULL_TURN_VOYAGE,Full Turn Discs,Voyage,Distance,12,5,0,3
+GATEWAY_APEX,Gateway Disc Sports,Apex,Distance,12,6,-1,2
+GATEWAY_ILLUSION,Gateway Disc Sports,Illusion,Distance,12,5,-1,2
+GATEWAY_JOURNEY_-_LS,Gateway Disc Sports,Journey - LS,Distance,12,6,-2,1
+GATEWAY_SPEED_DEMON,Gateway Disc Sports,Speed Demon,Distance,12,4,0,3
+GATEWAY_SPIRIT,Gateway Disc Sports,Spirit,Distance,12,4,0,4
+INFINITE_SLAB,Infinite Discs,Slab,Distance,12,3,0,4
+INNOVA_DESTROYER,Innova,Destroyer,Distance,12,5,-1,3
+INNOVA_TEEDEVIL,Innova,TeeDevil,Distance,12,5,-1,2
+INNOVA_TERN,Innova,Tern,Distance,12,6,-3,2
+INNOVA_WAHOO,Innova,Wahoo,Distance,12,6,-2,2
+INNOVA_XCALIBER,Innova,XCaliber,Distance,12,5,0,4
+LATITUDE_64_BLITZ,Latitude 64,Blitz,Distance,12,3,0,4
+LATITUDE_64_RECOIL,Latitude 64,Recoil,Distance,12,4,0,3
+LATITUDE_64_SCYTHE,Latitude 64,Scythe,Distance,12,3,0,4
+LATITUDE_64_VILLAIN,Latitude 64,Villain,Distance,12,4,0,4
+LEGACY_OUTLAW,Legacy Discs,Outlaw,Distance,12,5,-1,3
+LEGACY_OUTLAW_(RETOOLED),Legacy Discs,Outlaw (retooled),Distance,12,5,-1,3
+OBSISIAN_CALDERA,Obsidian Discs,Caldera,Distance,12,5,-1,2
+PLASTIC_ADDICTS_INTERVENTION,Plastic Addicts,Intervention,Distance,12,5,-1,4
+PRODIGY_D1,Prodigy Disc,D1,Distance,12,5,0,3
+PRODIGY_D2,Prodigy Disc,D2,Distance,12,6,-1,3
+PRODIGY_D3,Prodigy Disc,D3,Distance,12,6,-2,2
+PRODIGY_D4,Prodigy Disc,D4,Distance,12,6,-3,2
+PRODIGY_D5,Prodigy Disc,D5,Distance,12,6,-4,2
+PRODIGY_D6,Prodigy Disc,D6,Distance,12,6,-4,1
+PRODIGY_X3,Prodigy Disc,X3,Distance,12,5,-1,2
+PRODISCUS_RAZERI,Prodiscus,Razeri,Distance,12,5,0,3
+PRODISCUS_SLAIDI,Prodiscus,Slaidi,Distance,12,5,0,3
+STORM_JET_STREAM,Storm Disc Golf,Jet Stream,Distance,12,5,-1,3
+VIKING_VALHALLA,Viking Discs,Valhalla,Distance,12,5,0,2
+WESTSIDE_SWORD,Westside Golf Discs,Sword,Distance,12,5,-0.5,2
+WESTSIDE_SWORD_VIP_AIR,Westside Golf Discs,Sword VIP Air,Distance,12,5,-0.5,2
+YIKUN_TWIN_SWORDS,Yikun Sports,Twin Swords,Distance,12,5,0,2
+PRODIGY_D1_MAX,Prodigy Disc,D1 Max,Distance,12,5,0,3
+PRODIGY_D2_MAX,Prodigy Disc,D2 Max,Distance,12,6,-1,3
+INFINITE_EMPEROR,Infinite Discs,Emperor,Distance,12,5,-1,2.5
+DISCMANIA_SEA_SERPENT,Discmania,Sea Serpent,Distance,12,5,-2,2
+DISCMANIA_DD3,Discmania,DD3,Distance,12,5,-1,3
+BLACK_ZOMBIE_DISC_GOLF_FLAME_THROWER,Black Zombie Disc Golf,Flame Thrower,Distance,11.5,6,-2,2
+AEROBIE_EPIC_DRIVER,Aerobie,Epic Driver,Distance,11,3,-2,4
+AXIOM_DEFY,Axiom Discs,Defy,Distance,11,5,-1,3
+AXIOM_THRILL,Axiom Discs,Thrill,Distance,11,4,-1,3
+AXIOM_VANISH,Axiom Discs,Vanish,Distance,11,5,-3,2
+DGA_SAIL,Disc Golf Association,Sail,Distance,11,5,-4,1
+DISCMANIA_CD3,Discmania,CD3,Distance,11,5,-1,2
+DISCMANIA_DD_-_HYSTERIA,Discmania,DD - Hysteria,Distance,11,5,0,2
+DISCMANIA_PDX,Discmania,PDx,Distance,11,4,0,3
+DISCRAFT_CRUSH,Discraft,Crush,Distance,11,5,0,4
+DISCRAFT_MACHETE,Discraft,Machete,Distance,11,4,0,4
+DISCRAFT_PULSE,Discraft,Pulse,Distance,11,4,0,3
+DGA_ROGUE,Disc Golf Association,Rogue,Distance,11,4,-1,2
+DISCRAFT_SURGE,Discraft,Surge,Distance,11,5,-1,3
+DISCRAFT_SURGE-SS,Discraft,Surge-SS,Distance,11,5,-1,2
+DYNAMIC_RENEGADE,Dynamic Discs,Renegade,Distance,11,5,-1.5,2.5
+FLY_HIGH_DIESEL,Fly High Discs,Diesel,Distance,11,5,0,3
+GALAXY_METEORITE,Galaxy Disc Golf,Meteorite,Distance,11,6,-5,1
+GATEWAY_DIABLO_DT,Gateway Disc Sports,Diablo DT,Distance,11,5,-1,2
+GATEWAY_NINJA,Gateway Disc Sports,Ninja,Distance,11,5,0,2
+INNOVA_ARCHON,Innova,Archon,Distance,11,5,-2,2
+INNOVA_KRAIT,Innova,Krait,Distance,11,5,-1,2
+INNOVA_MAMBA,Innova,Mamba,Distance,11,6,-5,1
+INNOVA_MAX,Innova,Max,Distance,11,3,0,5
+INNOVA_MYSTERE,Innova,Mystere,Distance,11,6,-2,2
+INNOVA_TEE-REX,Innova,Tee-Rex,Distance,11,4,0,4
+INNOVA_WRAITH,Innova,Wraith,Distance,11,5,-1,3
+LATITUDE_64_FLOW,Latitude 64,Flow,Distance,11,6,-0.5,2
+MILLENIUM_ARIES,Millennium Golf Discs,Aries,Distance,11,6,-3,1
+MILLENIUM_ASTRA,Millennium Golf Discs,Astra,Distance,11,5,-2,2
+HYZER_BOMB_SABOT,Hyzer Bomb,Sabot,Distance,11,4,0,5
+MVP_ORBITAL,MVP Disc Sports,Orbital,Distance,11,5,-4.5,1
+MVP_PHASE,MVP Disc Sports,Phase,Distance,11,3.5,0,4
+MVP_PHOTON,MVP Disc Sports,Photon,Distance,11,5,-1,2.5
+MVP_WAVE,MVP Disc Sports,Wave,Distance,11,5,-2,2
+OBSISIAN_RIFT,Obsidian Discs,Rift,Distance,11,5,0,3
+OZONE_HYPERION,Ozone Discs,Hyperion,Distance,11,4,0,4
+PRODIGY_H1,Prodigy Disc,H1,Distance,11,4,0,3
+PRODIGY_H2_V2,Prodigy Disc,H2 V2,Distance,11,5,0,2.5
+PRODIGY_H3_V2,Prodigy Disc,H3 V2,Distance,11,5,-1,2
+SKYQUEST_MEDUSA,Skyquest Discs,Medusa,Distance,11,5,-2,2
+STREAMLINE_TRACE,Streamline Discs,Trace,Distance,11,5,-2,1
+VIKING_RAGNAROK,Viking Discs,Ragnarok,Distance,11,5,-2,1
+WESTSIDE_BOATMAN,Westside Golf Discs,Boatman,Distance,11,5,0,2
+WESTSIDE_BOATMAN_VIP_AIR,Westside Golf Discs,Boatman VIP Air,Distance,11,5,0,2
+YIKUN_JUN,Yikun Sports,Jun,Distance,11,5,-1,2
+ABC_SECRET_WEAPON,ABC Discs,Secret Weapon,Distance,10,5,-3,2
+ARSENAL_50_CAL,Arsenal Discs,50 Cal,Distance,10,4,-2,2
+DGA_HELLFIRE,Disc Golf Association,Hellfire,Distance,10,1,0,5
+DGA_TSUNAMI,Disc Golf Association,Tsunami,Distance,10,3,0,4
+DGA_UNDERTOW,Disc Golf Association,Undertow,Distance,10,4,-1,1
+DISCMANIA_CD_-_CRAZE,Discmania,CD - Craze,Distance,10,5,-1,2
+DISCMANIA_PD_-_FREAK,Discmania,PD - Freak,Distance,10,4,0,3
+DISCMANIA_TD_-_RUSH,Discmania,TD - Rush,Distance,10,5,-2,1
+DISCMANIA_TD2_-_FEVER,Discmania,TD2 - Fever,Distance,10,5,-4,1
+DISCRAFT_AVENGER,Discraft,Avenger,Distance,10,5,0,3
+DISCRAFT_AVENGER-SS,Discraft,Avenger-SS,Distance,10,5,-3,1
+DISCRAFT_FLASH,Discraft,Flash,Distance,10,5,-2,3
+DISCRAFT_VULTURE,Discraft,Vulture,Distance,10,5,0,2
+DYNAMIC_CRIMINAL,Dynamic Discs,Criminal,Fairway,10,3,1,4
+GURU_SLEIPNER,Guru Disc Golf,Sleipner,Distance,10,4,-1,2
+INNOVA_BEAST,Innova,Beast,Distance,10,5,-2,2
+INNOVA_MONARCH,Innova,Monarch,Distance,10,5,-4,1
+INNOVA_MONSTER,Innova,Monster,Distance,10,3,0,5
+INNOVA_ORC,Innova,ORC,Distance,10,4,-1,3
+INNOVA_STARFIRE,Innova,Starfire,Distance,10,4,0,3
+LATITUDE_64_MUSKET,Latitude 64,Musket,Fairway,10,5,-0.5,2
+LEGACY_FIGHTER,Legacy Discs,Fighter,Fairway,10,3,0,4
+LEGACY_NEMESIS,Legacy Discs,Nemesis,Distance,10,6,-4,2
+MILLENIUM_AQUARIUS,Millennium Golf Discs,Aquarius,Distance,10,5,-4,2
+PRODISCUS_TITAN,Prodiscus,Titan,Distance,10,4,0,3
+RPM_KEA,RPM Discs/Disc Golf Aotearoa,Kea,Fairway,10,5,-2,2
+RPM_KIWI,RPM Discs/Disc Golf Aotearoa,Kiwi,Distance,10,5,-1,2
+SKYQUEST_L13,Skyquest Discs,L13,Distance,10,5,-3,2
+VIKING_BERSERKER,Viking Discs,Berserker,Distance,10,5,-4,1
+WESTSIDE_FORTRESS,Westside Golf Discs,Fortress,Fairway,10,4,0,3
+WESTSIDE_NORTHMAN,Westside Golf Discs,Northman,Fairway,10,5,-1,2
+WESTSIDE_NORTHMAN_VIP_AIR,Westside Golf Discs,Northman VIP Air,Fairway,10,5,-1,2
+WESTSIDE_SAMPO,Westside Golf Discs,Sampo,Fairway,10,4,-1,2
+YIKUN_WEI,Yikun Sports,Wei,Distance,10,5,-2.5,2
+DISCRAFT_ANAX,Discraft,Anax,Fairway,10,6,0,3
+MINT_FREETAIL,Mint Discs,Freetail,Distance,10,5,-3,2
+INFINITE_AZTEC,Infinite Discs,Aztec,Distance,10,5,-1,2
+ARSENAL_CYBORG,Arsenal Discs,Cyborg,Fairway,9,5,-4,1
+AXIOM_FIREBALL,Axiom Discs,Fireball,Fairway,9,3.5,-0.5,4
+AXIOM_INSANITY,Axiom Discs,Insanity,Fairway,9,5,-2,1.5
+AXIOM_VIRUS,Axiom Discs,Virus,Fairway,9,5,-3.5,1
+AXIOM_WRATH,Axiom Discs,Wrath,Fairway,9,4.5,-0.5,2
+DAREDEVIL_BUFFALO,Daredevil Discs,Buffalo,Fairway,9,4,-1,5
+DAREDEVIL_MAMMOTH,Daredevil Discs,Mammoth,Fairway,9,4,-1,5
+DAREDEVIL_OGOPOGO,Daredevil Discs,Ogopogo,Fairway,9,4,-2,5
+DAREDEVIL_SABERTOOTH,Daredevil Discs,Sabertooth,Fairway,9,4,0,5
+DAREDEVIL_SWIFT_FOX,Daredevil Discs,Swift Fox,Fairway,9,5,-3,1
+DAREDEVIL_TIMBERWOLF,Daredevil Discs,Timberwolf,Fairway,9,6,-1,0
+DISCMANIA_CD2,Discmania,CD2,Fairway,9,5,-1,2
+DISCMANIA_FD3,Discmania,FD3,Fairway,9,4,0,3
+DISCMANIA_TDX,Discmania,TDx,Fairway,9,5,-3,1
+DISCRAFT_FLICK,Discraft,Flick,Fairway,9,4,1,4
+DISCRAFT_HEAT,Discraft,Heat,Fairway,9,6,-3,1
+DISCRAFT_PREDATOR,Discraft,Predator,Fairway,9,4,0,4
+DISCRAFT_UNDERTAKER,Discraft,Undertaker,Fairway,9,5,-1,2
+DYNAMIC_CONVICT,Dynamic Discs,Convict,Fairway,9,4,-0.5,3
+DYNAMIC_ESCAPE,Dynamic Discs,Escape,Fairway,9,5,1,2
+DYNAMIC_FELON,Dynamic Discs,Felon,Fairway,9,3,0.5,4
+DYNAMIC_GETAWAY,Dynamic Discs,Getaway,Fairway,9,5,-0.5,3
+DYNAMIC_VANDAL,Dynamic Discs,Vandal,Fairway,9,5,-1.5,2
+ELEMENT_CHROMIUM,Element Discs,Chromium,Fairway,9,5,-1,1
+FLY_HIGH_JACK_THE_RIPPER,Fly High Discs,Jack the Ripper,Fairway,9,5,0,1
+FULL_TURN_DRIFTER,Full Turn Discs,Drifter,Fairway,9,4,-1,2
+FULL_TURN_TRAVELER,Full Turn Discs,Traveler,Fairway,9,4,0,2
+GATEWAY_APACHE,Gateway Disc Sports,Apache,Fairway,9,6,-1,2
+GATEWAY_ASSASSIN,Gateway Disc Sports,Assassin,Fairway,9,6,-1,1
+GATEWAY_DIABLO,Gateway Disc Sports,Diablo,Fairway,9,5,0,2
+INFINITE_SPHINX,Infinite Discs,Sphinx,Fairway,9,6,-3,1
+INNOVA_FIREBIRD,Innova,Firebird,Fairway,9,3,0,4
+INNOVA_FIREBIRD_L_(FL),Innova,Firebird L (FL),Fairway,9,3,0,4
+INNOVA_ROADRUNNER,Innova,Roadrunner,Fairway,9,5,-4,1
+INNOVA_SAVANT,Innova,Savant,Fairway,9,5,-1,2
+INNOVA_SIDEWINDER,Innova,Sidewinder,Fairway,9,5,-3,1
+INNOVA_THUNDERBIRD,Innova,Thunderbird,Fairway,9,5,0,2
+INNOVA_VALKYRIE,Innova,Valkyrie,Fairway,9,4,-2,2
+INNOVA_VIKING,Innova,Viking,Fairway,9,4,-1,2
+KASTAPLAST_FALK,Kastaplast,Falk,Fairway,9,6,-2,2
+KASTAPLAST_STÅL,Kastaplast,Stål,Fairway,9,4,0,3
+LATITUDE_64_BRYCE,Latitude 64,Bryce,Fairway,9,6,-2,2
+LATITUDE_64_CULVERIN,Latitude 64,Culverin,Fairway,9,5,-0.5,3
+LATITUDE_64_FURY,Latitude 64,Fury,Fairway,9,6,-2,2
+LATITUDE_64_JADE,Latitude 64,Jade,Fairway,9,6,-2,1
+LATITUDE_64_PIONEER,Latitude 64,Pioneer,Fairway,9,3,0,4
+LATITUDE_64_SAINT,Latitude 64,Saint,Fairway,9,7,-2,2
+LATITUDE_64_ZION,Latitude 64,Zion,Fairway,9,4,-0.5,3
+LEGACY_BANDIT,Legacy Discs,Bandit,Fairway,9,5,-2,1
+LEGACY_ENEMY,Legacy Discs,Enemy,Fairway,9,3,0,4
+LEGACY_MONGOOSE,Legacy Discs,Mongoose,Fairway,9,5,-3,1
+HYZER_BOMB_MARKSMAN,Hyzer Bomb,Marksman,Fairway,9,4,-1,2
+MILLENIUM_ORION_LF,Millennium Golf Discs,Orion LF,Fairway,9,5,-1,3
+MILLENIUM_ORION_LS,Millennium Golf Discs,Orion LS,Fairway,9,5,-2,2
+MILLENIUM_POLARIS_LF,Millennium Golf Discs,Polaris LF,Fairway,9,5,-2,2.5
+MVP_IMPULSE,MVP Disc Sports,Impulse,Distance,9,5,-3,1
+MVP_INERTIA,MVP Disc Sports,Inertia,Distance,9,5,-2,2
+MVP_MOTION,MVP Disc Sports,Motion,Distance,9,3.5,0,4
+MVP_TESLA,MVP Disc Sports,Tesla,Distance,9,5,-1,2
+PRODIGY_H4,Prodigy Disc,H4,Distance,9,5,-2,1.5
+PRODIGY_H5,Prodigy Disc,H5,Distance,9,5,-3,1
+PRODISCUS_ROCKET,Prodiscus,Rocket,Fairway,9,4,0,3
+TOBU_CHARGE,TOBU Discs,Charge,Fairway,9,4,-1,2
+WESTSIDE_AHTI,Westside Golf Discs,Ahti,Fairway,9,3,0,4
+WESTSIDE_HATCHET,Westside Golf Discs,Hatchet,Fairway,9,6,-2,1
+WESTSIDE_LONGBOWMAN,Westside Golf Discs,Longbowman,Fairway,9,4,0,3
+YIKUN_HU,Yikun Sports,Hu,Fairway,9,5,-2.5,2
+GATEWAY_BLADE,Gateway Disc Sports,Blade,Fairway,9,5,0,3
+GATEWAY_SPEAR,Gateway Disc Sports,Spear,Fairway,9,6,-2,1
+STREAMLINE_FLARE,Streamline,Flare,Fairway,9,4,0,3.5
+STREAMLINE_LIFT,Streamline,Lift,Fairway,9,5,-2,1.5
+MILLENNIUM_DRACO,Millennium,Draco,Fairway,9,5,0,3
+INFINITE_SCEPTER,Infinite Discs,Scepter,Fairway,9,3,0,4
+DAREDEVIL_WOLVERINE,Daredevil Discs,Wolverine,Fairway,8,5,-2,2
+DGA_BANZAI,Disc Golf Association,Banzai,Fairway,8,4,0,3
+DGA_PIPELINE,Disc Golf Association,Pipeline,Fairway,8,5,0,2
+DISCRAFT_MANTIS,Discraft,Mantis,Fairway,8,4,-2,2
+DISCRAFT_XL,Discraft,XL,Fairway,8,5,-1,2
+DISCRAFT_XPRESS,Discraft,Xpress,Fairway,8,5,-3,1
+DISCRAFT_XS,Discraft,XS,Fairway,8,5,-2,3
+DYNAMIC_BREAKOUT,Dynamic Discs,Breakout,Fairway,8,5,-1,1.5
+DYNAMIC_THIEF,Dynamic Discs,Thief,Fairway,8,5,-1.5,2
+DYNAMIC_WITNESS,Dynamic Discs,Witness,Fairway,8,6,-3,1
+INNOVA_ARCHANGEL,Innova,Archangel,Fairway,8,6,-4,1
+INNOVA_DRAGON,Innova,Dragon,Fairway,8,5,-2,2
+INNOVA_TEEBIRD_3,Innova,Teebird 3,Fairway,8,4,0,2
+INNOVA_TL_3,Innova,TL 3,Fairway,8,4,0,1
+LATITUDE_64_DIAMOND,Latitude 64,Diamond,Fairway,8,6,-3,1
+LATITUDE_64_FALCHION,Latitude 64,Falchion,Fairway,8,5,-1,2
+LATITUDE_64_SAINT_PRO,Latitude 64,Saint Pro,Fairway,8,5,-0.5,2
+LATITUDE_64_STRIKER,Latitude 64,Striker,Fairway,8,5,0,2
+LATITUDE_64_VISION,Latitude 64,Vision,Fairway,8,6,-1,2
+LEGACY_PHENOM,Legacy Discs,Phenom,Fairway,8,5,-1,2
+LIGHTNING_#2_HELIX,Lightning Discs,#2 Helix,Fairway,8,5,-1,3
+MILLENIUM_JLS,Millennium Golf Discs,JLS,Fairway,8,5,-2,2
+MILLENIUM_POLARIS_LS,Millennium Golf Discs,Polaris LS,Fairway,8,5,-2,1
+MILLENIUM_QJLS,Millennium Golf Discs,QJLS,Fairway,8,5,-2,2
+MINT_ALPHA,Mint Discs,Alpha,Fairway,8,4,0,2
+MVP_AMP,MVP Disc Sports,Amp,Fairway,8,5,-1.5,1
+MVP_SHOCK,MVP Disc Sports,Shock,Fairway,8,5,0,2.5
+MVP_VOLT,MVP Disc Sports,Volt,Fairway,8,5,-0.5,2
+PRODISCUS_RESPECTI,Prodiscus,Respecti,Fairway,8,4,0,2
+TOBU_POWER_ROLLER,TOBU Discs,Power Roller,Fairway,8,4,-3,1
+WESTSIDE_STAG,Westside Golf Discs,Stag,Fairway,8,6,-1,2
+WESTSIDE_STAG_VIP_AIR,Westside Golf Discs,Stag VIP Air,Fairway,8,6,-1,2
+YIKUN_GOU,Yikun Sports,Gou,Fairway,8,5,-4,1
+STORM_ABYSS,Storm Disc Golf,Abyss,Fairway,8,5,0,3
+DISCMANIA_INSTINCT,Discmania,Instinct,Fairway,8,5,0,2
+DISCMANIA_SUN_CROW,Discmania,Sun Crow,Fairway,8,5,-4,1
+AQUAFLIGHT_SWIFT,AquaFlight Discs,Swift,Fairway,7,5,-2,1
+DISCMANIA_FD_-_JACKAL,Discmania,FD - Jackal,Fairway,7,6,-1,1
+DISCMANIA_FD2,Discmania,FD2,Fairway,7,4,0,2
+DISCRAFT_CYCLONE,Discraft,Cyclone,Fairway,7,4,-1,3
+DISCRAFT_ECLIPSE,Discraft,Eclipse,Fairway,7,5,-2,2
+DISCRAFT_STING,Discraft,Sting,Fairway,7,5,-2,1
+DYNAMIC_MAVERICK,Dynamic Discs,Maverick,Fairway,7,4,-1.5,2
+GALAXY_SHOOTING_STAR,Galaxy Disc Golf,Shooting Star,Fairway,7,5,-2,1
+GATEWAY_SABRE,Gateway Disc Sports,Sabre,Fairway,7,5,-1,1
+INFINITE_EXODUS,Infinite Discs,Exodus,Fairway,7,5,-0.5,2
+INNOVA_BANSHEE,Innova,Banshee,Fairway,7,3,0,3
+INNOVA_EAGLE_(OLD),Innova,Eagle (old),Fairway,7,4,-1,3
+INNOVA_EAGLE_(NEW),Innova,Eagle (new),Fairway,7,4,-1,3
+INNOVA_LEOPARD_3,Innova,Leopard 3,Fairway,7,5,-2,1
+INNOVA_TEEBIRD,Innova,TeeBird,Fairway,7,5,0,2
+INNOVA_TL,Innova,TL,Fairway,7,5,0,1
+KESTREL_BEGINNER_FAIRWAY_DRIVER,Kestrel Outdoors,Beginner Fairway Driver,Fairway,7,6,1,1
+LATITUDE_64_EXPLORER,Latitude 64,Explorer,Fairway,7,5,0,2
+LATITUDE_64_MAUL,Latitude 64,Maul,Fairway,7,7,-2,1
+LATITUDE_64_RIVER,Latitude 64,River,Fairway,7,7,-1,1
+LATITUDE_64_SPARK,Latitude 64,Spark,Fairway,7,4,-0.5,2
+LATITUDE_64_XXX,Latitude 64,XXX,Fairway,7,3,0,4
+LEGACY_PATRIOT,Legacy Discs,Patriot,Fairway,7,5,-2,1
+LEGACY_RIVAL,Legacy Discs,Rival,Fairway,7,5,0,2
+LIGHTNING_#1_HYZER,Lightning Discs,#1 Hyzer,Fairway,7,3,0,4
+LIGHTNING_#3_FLYER,Lightning Discs,#3 Flyer,Fairway,7,4,-2,2
+LIGHTNING_#4_DRIVER,Lightning Discs,#4 Driver,Fairway,7,4,-1,2
+HYZER_BOMB_VETERAN,Hyzer Bomb,Veteran,Fairway,7,4,0,1
+OBSISIAN_CINDER,Obsidian Discs,Cinder,Fairway,7,5,0,2
+OBSISIAN_SHARD,Obsidian Discs,Shard,Fairway,7,5,-1.5,1
+PRODIGY_F1,Prodigy Disc,F1,Fairway,7,4,0,3
+PRODIGY_F2,Prodigy Disc,F2,Fairway,7,5,-1,3
+PRODIGY_F3,Prodigy Disc,F3,Fairway,7,5,-1,2
+PRODIGY_F5,Prodigy Disc,F5,Fairway,7,5,-2,1
+PRODIGY_F7,Prodigy Disc,F7,Fairway,7,5,-3,1
+PRODISCUS_LASERI,Prodiscus,Laseri,Fairway,7,3,-3,2
+REPTILIAN_TYRANT,Reptilian Disc Golf,Tyrant,Fairway,7,3,0,2.5
+STREAMLINE_DRIFT,Streamline Discs,Drift,Fairway,7,5,-2,1
+VIKING_BARBARIAN,Viking Discs,Barbarian,Fairway,7,5,0,2
+VIKING_COSMOS,Viking Discs,Cosmos,Fairway,7,5,-2,1
+WESTSIDE_SEER,Westside Golf Discs,Seer,Fairway,7,5,-2,1
+WESTSIDE_UNDERWORLD,Westside Golf Discs,Underworld,Fairway,7,6,-3,1
+WESTSIDE_UNDERWORLD_VIP_AIR,Westside Golf Discs,Underworld VIP Air,Fairway,7,6,-3,1
+DGUK_THE_COUNT,Disc Golf UK,The Count,Fairway,7,4,-1,3
+AGL_SYCAMORE,Above Ground Level,Sycamore,Fairway,7,5,0,1
+INFINITE_CENTURION,Infinite Discs,Centurion,Fairway,7,5,-1,1.5
+AXIOM_CLASH,Axiom Discs,Clash,Fairway,6.5,4,-1,2
+AXIOM_CRAVE,Axiom Discs,Crave,Fairway,6.5,5,-1,1
+AXIOM_INSPIRE,Axiom Discs,Inspire,Fairway,6.5,5,-1.5,1
+MVP_RESISTOR,MVP Disc Sports,Resistor,Fairway,6.5,4,0,3.5
+MVP_SERVO,MVP Disc Sports,Servo,Fairway,6.5,5,-1,2
+MVP_SWITCH,MVP Disc Sports,Switch,Fairway,6.5,5,-1.5,1
+ABC_FLYING_SQUIRREL,ABC Discs,Flying Squirrel,Midrange,6,5,-3,2
+AQUAFLIGHT_PELICAN,AquaFlight Discs,Pelican,Fairway,6,5,-3,1
+DGA_TREMOR,Disc Golf Association,Tremor,Midrange,6,5,-4,1
+DISCRAFT_ARCHER,Discraft,Archer,Midrange,6,5,-3,1
+DISCRAFT_GLIDE,Discraft,Glide,Midrange,6,5,-3,2
+DGA_SQUALL,Disc Golf Association,Squall,Fairway,6,4,-1,1
+DISCRAFT_ZOMBEE,Discraft,Zombee,Midrange,6,4,-1,1
+ELEMENT_RADIUM,Element Discs,Radium,Midrange,6,4,-1,2
+FLY_HIGH_PURE_O.G.,Fly High Discs,Pure O.G.,Midrange,6,4,-1,2
+GATEWAY_BLAZE,Gateway Disc Sports,Blaze,Midrange,6,4,0,3
+GATEWAY_DEMON,Gateway Disc Sports,Demon,Midrange,6,3,0,4
+GURU_MIDGARD,Guru Disc Golf,Midgard,Midrange,6,5,-1,1
+INNOVA_CHEETAH,Innova,Cheetah,Midrange,6,4,-2,2
+INNOVA_GAZELLE,Innova,Gazelle,Midrange,6,4,0,2
+INNOVA_LEOPARD,Innova,Leopard,Midrange,6,5,-2,1
+INNOVA_VIPER,Innova,Viper,Midrange,6,4,1,5
+INNOVA_WHIPPET,Innova,Whippet,Midrange,6,3,1,5
+KASTAPLAST_KAXE,Kastaplast,Kaxe,Midrange,6,4,0,3
+KASTAPLAST_KAXE_Z,Kastaplast,Kaxe Z,Midrange,6,5,0,2
+LATITUDE_64_CORE,Latitude 64,Core,Midrange,6,5,-0.5,1
+LATITUDE_64_GOBI,Latitude 64,Gobi,Midrange,6,5,-0.5,1
+LATITUDE_64_RIVER_PRO,Latitude 64,River Pro,Fairway,6,5,0,2
+LIGHTNING_#1_HOOKSHOT,Lightning Discs,#1 Hookshot,Midrange,6,4,0,3
+LIGHTNING_#2_ROLLER,Lightning Discs,#2 Roller,Midrange,6,6,-2,2
+LIGHTNING_#3_DRIVER,Lightning Discs,#3 Driver,Midrange,6,5,-2,3
+HYZER_BOMB_MOAB,Hyzer Bomb,Moab,Midrange,6,4,1,5
+MVP_RELAY,MVP Disc Sports,Relay,Fairway,6,5,-2,1
+MVP_SIGNAL,MVP Disc Sports,Signal,Fairway,6,5,-3,1
+OZONE_ANDRO_C,Ozone Discs,Andro C,Fairway,6,4,-2,1
+YIKUN_JIAO,Yikun Sports,Jiao,Fairway,6,5,-2.5,1.5
+YIKUN_VIEW,Yikun Sports,View,Fairway,6,4,-1,2
+DISCMANIA_FOX_SPIRIT,Discmania,Fox Spirit,Midrange,6,4,0,2
+INNOVA_CAIMAN,Innova,Caiman,Midrange,5.5,2,0,4
+DGUK_THE_DUKE,Disc Golf UK,The Duke,Midrange,5.5,4,0,3.5
+AQUAFLIGHT_DRAGONFLY,AquaFlight Discs,Dragonfly,Midrange,5,4,-3,1
+ARSENAL_MORNINGSTAR,Arsenal Discs,Morningstar,Midrange,5,4,-1,2
+BLACK_ZOMBIE_CROSSBOW,Black Zombie Disc Golf,Crossbow,Midrange,5,5,-1,1
+CROSSLAP_LUCKY,Crosslap Discgolf Parks,Lucky,Midrange,5,5,-2,1
+DGA_AFTERSHOCK,Disc Golf Association,Aftershock,Midrange,5,4,0,2
+DGA_QUAKE,Disc Golf Association,Quake,Midrange,5,3,0,3
+DISCMANIA_MD3_-_MIDRANGE_DRIVER,Discmania,MD3 - Midrange Driver,Midrange,5,5,0,2
+DISCMANIA_MD4,Discmania,MD4,Midrange,5,4,0,3
+DISCMANIA_MD5,Discmania,MD5,Midrange,5,4,0,2
+DISCRAFT_BUZZZ,Discraft,Buzzz,Midrange,5,4,-1,1
+DISCRAFT_BUZZZ_OS,Discraft,Buzzz OS,Midrange,5,4,0,3
+DISCRAFT_BUZZZ-SS,Discraft,Buzzz-SS,Midrange,5,4,-2,1
+DISCRAFT_BUZZZ-GT,Discraft,Buzzz-GT,Midrange,5,5,0,1
+DISCRAFT_DRONE,Discraft,Drone,Midrange,5,4,0,4
+DISCRAFT_IMPACT,Discraft,Impact,Midrange,5,5,-2,2
+DISCRAFT_HORNET,Discraft,Hornet,Midrange,5,5,0,4
+DISCRAFT_STRATUS,Discraft,Stratus,Midrange,5,5,-3,1
+DISCRAFT_WASP,Discraft,Wasp,Midrange,5,5,0,3
+DYNAMIC_EMAC_TRUTH,Dynamic Discs,EMAC Truth,Midrange,5,5,0,2
+DYNAMIC_EVIDENCE,Dynamic Discs,Evidence,Midrange,5,5,-1,0
+DYNAMIC_JUSTICE,Dynamic Discs,Justice,Midrange,5,1,0.5,4
+DYNAMIC_PATROL,Dynamic Discs,Patrol,Midrange,5,5,-3,1
+DYNAMIC_PROOF,Dynamic Discs,Proof,Midrange,5,5,-3,1
+DYNAMIC_TRUTH,Dynamic Discs,Truth,Midrange,5,5,-1,1
+DYNAMIC_VERDICT,Dynamic Discs,Verdict,Midrange,5,4,0,3.5
+DYNAMIC_WARRANT,Dynamic Discs,Warrant,Midrange,5,5,-2,0
+ELEMENT_LITHIUM,Element Discs,Lithium,Midrange,5,4,-2,1
+FLY_HIGH_KGB,Fly High Discs,KGB,Midrange,5,5,-1,1
+FULL_TURN_NAVIGATOR,Full Turn Discs,Navigator,Midrange,5,4,-1,2
+GALAXY_ORBIT,Galaxy Disc Golf,Orbit,Midrange,5,4,0,3
+GATEWAY_ELEMENT,Gateway Disc Sports,Element,Midrange,5,5,-1,1
+GATEWAY_ELEMENT_X,Gateway Disc Sports,Element X,Midrange,5,5,-1,1
+GATEWAY_MYSTIC,Gateway Disc Sports,Mystic,Midrange,5,5,-2,0
+GATEWAY_PROPHECY,Gateway Disc Sports,Prophecy,Midrange,5,5,0,2
+GATEWAY_WARRIOR,Gateway Disc Sports,Warrior,Midrange,5,4,0,3
+INFINITE_ANUBIS,Infinite Discs,Anubis,Midrange,5,5,0,0
+INFINITE_CHARIOT,Infinite Discs,Chariot,Midrange,5,5,0,1
+INFINITE_RA,Infinite Discs,Ra,Midrange,5,4,0,3
+INNOVA_ATLAS,Innova,Atlas,Midrange,5,4,0,1
+INNOVA_CRO,Innova,CRO,Midrange,5,3,0,2
+INNOVA_FOXBAT,Innova,Foxbat,Midrange,5,6,-1,0
+INNOVA_GATOR,Innova,Gator,Midrange,5,2,0,4
+INNOVA_GATOR3,Innova,Gator3,Midrange,5,2,0,3
+INNOVA_KITE,Innova,Kite,Midrange,5,6,-3,1
+INNOVA_MAKO_3,Innova,Mako 3,Midrange,5,5,0,0
+INNOVA_MANTA,Innova,Manta,Midrange,5,5,-2,1
+INNOVA_PANTHER,Innova,Panther,Midrange,5,4,-2,1
+INNOVA_ROC_3,Innova,Roc 3,Midrange,5,4,0,3
+INNOVA_ROCX3,Innova,RocX3,Midrange,5,4,0,3.5
+INNOVA_SHARK_3,Innova,Shark 3,Midrange,5,4,0,2
+INNOVA_SKEETER,Innova,Skeeter,Midrange,5,5,-1,1
+INNOVA_SPIDER,Innova,Spider,Midrange,5,3,0,1
+INNOVA_WOMBAT,Innova,Wombat,Midrange,5,6,-1,0
+INNOVA_WOMBAT3,Innova,Wombat3,Midrange,5,6,-1,0
+INNOVA_LION,Innova,Lion,Midrange,5,4,0,2
+LATITUDE_64_ANCHOR,Latitude 64,Anchor,Midrange,5,4,0,3
+LATITUDE_64_CLAYMORE,Latitude 64,Claymore,Midrange,5,5,-1,1
+LATITUDE_64_COMPASS,Latitude 64,Compass,Midrange,5,5,0,1
+LATITUDE_64_FUSE,Latitude 64,Fuse,Midrange,5,6,-1,0
+LATITUDE_64_MACE,Latitude 64,Mace,Midrange,5,5,0,2
+LEGACY_GAUGE,Legacy Discs,Gauge,Midrange,5,5,0,1
+LEGACY_PURSUIT,Legacy Discs,Pursuit,Distance,5,3,0,3
+LIGHTNING_#2_HOOKSHOT,Lightning Discs,#2 Hookshot,Midrange,5,5,-1,3
+HYZER_BOMB_MORTAR,Hyzer Bomb,Mortar,Midrange,5,3,0,3
+MILLENIUM_SENTINEL_MF,Millennium Golf Discs,Sentinel MF,Midrange,5,4,0,4
+MINT_BOBCAT,Mint Discs,Bobcat,Midrange,5,5,0,2
+MVP_AXIS,MVP Disc Sports,Axis,Midrange,5,5,-1,1
+MVP_DEFLECTOR,MVP Disc Sports,Deflector,Midrange,5,3.5,0,4
+MVP_MATRIX,MVP Disc Sports,Matrix,Midrange,5,4,-1,2
+MVP_VECTOR,MVP Disc Sports,Vector,Midrange,5,4,0,2
+PRODIGY_M2,Prodigy Disc,M2,Midrange,5,4,0,2
+PRODIGY_M3,Prodigy Disc,M3,Midrange,5,5,-1,2
+PRODIGY_M4,Prodigy Disc,M4,Midrange,5,5,-1,1
+PRODIGY_M5,Prodigy Disc,M5,Midrange,5,5,-3,1
+PRODIGY_NEW_M1,Prodigy Disc,New M1,Midrange,5,4,0,3
+PRODISCUS_MIDARI,Prodiscus,Midari,Midrange,5,4,-1,2
+REPTILIAN_GILA,Reptilian Disc Golf,Gila,Midrange,5,4,0,3
+STORM_THE_EYE,Storm Disc Golf,The Eye,Midrange,5,5,-1,1
+STREAMLINE_RUNWAY,Streamline Discs,Runway,Midrange,5,4,0,3.5
+WESTSIDE_BARD,Westside Golf Discs,Bard,Midrange,5,4,0,3
+WESTSIDE_PINE,Westside Golf Discs,Pine,Midrange,5,4,0,2
+WESTSIDE_SLING,Westside Golf Discs,Sling,Midrange,5,5,0,1
+WESTSIDE_TURSAS,Westside Golf Discs,Tursas,Midrange,5,5,-2,1
+WESTSIDE_TURSAS_VIP_AIR,Westside Golf Discs,Tursas VIP Air,Midrange,5,5,-2,1
+WESTSIDE_WARSHIP,Westside Golf Discs,Warship,Midrange,5,6,0,1
+WESTSIDE_WARSHIP_VIP_AIR,Westside Golf Discs,Warship VIP Air,Midrange,5,6,0,1
+YIKUN_KUI,Yikun Sports,Kui,Midrange,5,5,0,2
+AXIOM_PYRO,Axiom Discs,Pyro,Midrange,5,4,0,2.5
+PRODIGY_MX-3,Prodigy,MX-3,Midrange,5,4,0,2
+AGL_MAGNOLIA,Above Ground Level,Magnolia,Midrange,5,4,0,2
+DISCMANIA_METHOD,Discmania,Method,Midrange,5,5,0,3
+YIKUN_TOMAHAWK,Yikun Sports,Tomahawk,Midrange,5,6,0,0
+DGA_RIFT,Disc Golf Association,Rift,Midrange,5,4,-1,1.5
+DISCRAFT_MALTA,Discraft,Malta,Midrange,5,4,1,3
+ABC_MISSION,ABC Discs,Mission,Midrange,4,5,-1,2
+AXIOM_ALIAS,Axiom Discs,Alias,Midrange,4,4,-1,1
+AXIOM_THEORY,Axiom Discs,Theory,Midrange,4,4,-1.5,1
+DAREDEVIL_CARIBOU,Daredevil Discs,Caribou,Midrange,4,5,-3,1
+DAREDEVIL_GRIZZLY,Daredevil Discs,Grizzly,Midrange,4,4,-1,2
+DAREDEVIL_MOOSE,Daredevil Discs,Moose,Midrange,4,5,0,2
+DAREDEVIL_PTERANODON,Daredevil Discs,Pteranodon,Midrange,4,6,-2,1
+DAREDEVIL_WALRUS,Daredevil Discs,Walrus,Midrange,4,5,0,3
+DGA_PROLINE_BREAKER,Disc Golf Association,Proline Breaker,Midrange,4,3,0,3
+DISCMANIA_MD,Discmania,MD,Midrange,4,5,0,0
+DISCMANIA_MD1_-_MIDRANGE_DRIVER,Discmania,MD1 - Midrange Driver,Midrange,4,4,0,2
+DISCMANIA_MD2_-_FIEND,Discmania,MD2 - Fiend,Midrange,4,5,0,2
+DISCRAFT_COMET,Discraft,Comet,Midrange,4,5,-2,1
+DISCRAFT_METEOR,Discraft,Meteor,Midrange,4,5,-3,1
+DISCRAFT_ZONE,Discraft,Zone,Midrange,4,3,0,3
+DYNAMIC_SUSPECT,Dynamic Discs,Suspect,Midrange,4,3,0,3
+ELEMENT_URANIUM,Element Discs,Uranium,Midrange,4,2,0,2
+FULL_TURN_PASSPORT,Full Turn Discs,Passport,Putter,4,4,-1,1
+GURU_THOR,Guru Disc Golf,Thor,Midrange,4,4,0,2
+INNOVA_COBRA,Innova,Cobra,Midrange,4,5,-2,2
+INNOVA_COYOTE,Innova,Coyote,Midrange,4,5,0,1
+INNOVA_MAKO,Innova,Mako,Midrange,4,5,0,0
+INNOVA_RAT,Innova,Rat,Midrange,4,2,0,3
+INNOVA_ROC,Innova,Roc,Midrange,4,4,0,3
+INNOVA_SHARK,Innova,Shark,Midrange,4,4,0,2
+INNOVA_STINGRAY,Innova,Stingray,Midrange,4,5,-3,1
+INNOVA_VROC,Innova,VRoc,Midrange,4,4,0,1
+INNOVA_WOLF,Innova,Wolf,Midrange,4,3,-4,1
+LATITUDE_64_FUJI,Latitude 64,Fuji,Midrange,4,4,0,2
+LATITUDE_64_PAIN,Latitude 64,Pain,Midrange,4,4,0,3
+LATITUDE_64_PEARL,Latitude 64,Pearl,Midrange,4,6,-4,0
+LATITUDE_64_SPIKE,Latitude 64,Spike,Putter,4,3,-1,1
+LEGACY_GHOST,Legacy Discs,Ghost,Midrange,4,5,0,3
+LEGACY_RECLUSE,Legacy Discs,Recluse,Midrange,4,3,0,4
+LIGHTNING_#3_HOOKSHOT,Lightning Discs,#3 Hookshot,Midrange,4,5,-1,2
+MILLENIUM_MIDRANGE_MS/AURORA,Millennium Golf Discs,Midrange MS/Aurora,Midrange,4,5,-1,1
+MILLENIUM_QMS,Millennium Golf Discs,QMS,Midrange,4,5,0,0
+MILLENIUM_TAURUS,Millennium Golf Discs,Taurus,Midrange,4,4,0,4
+MVP_TANGENT,MVP Disc Sports,Tangent,Midrange,4,4,-0.5,0.5
+MVP_TENSOR,MVP Disc Sports,Tensor,Midrange,4,4,0,2.5
+MVP_VERTEX,MVP Disc Sports,Vertex,Midrange,4,4,-2,0.5
+PRODIGY_A2,Prodigy Disc,A2,Putter,4,4,0,3
+PRODIGY_A3,Prodigy Disc,A3,Putter,4,4,0,2.5
+PRODIGY_A4,Prodigy Disc,A4,Putter,4,4,-1,2
+PRODISCUS_JOKERI,Prodiscus,Jokeri,Putter,4,3,0,2
+VIKING_AXE,Viking Discs,Axe,Midrange,4,3,0,1
+VIKING_LOKI,Viking Discs,Loki,Midrange,4,2,0,4
+VIKING_NORDIC_WARRIOR,Viking Discs,Nordic Warrior,Midrange,4,4,0,2
+WESTSIDE_ANVIL,Westside Golf Discs,Anvil,Midrange,4,2,0,4
+WESTSIDE_HARP,Westside Golf Discs,Harp,Midrange,4,3,0,3
+YIKUN_CROSSBOW_YIKUN,Yikun Sports,Crossbow_yikun,Midrange,4,2,0.5,4
+YIKUN_YAO,Yikun Sports,Yao,Midrange,4,4,0,2
+DGUK_THE_BARON,Disc Golf UK,The Baron,Midrange,4,3,0,2.5
+DISCMANIA_SPRING_OX,Discmania,Spring Ox,Midrange,4,3,0,2
+INNOVA_WEDGE,Innova,Wedge,Putter,3.5,3,-3,1
+INFINITE_COHORT,Infinite Discs,Cohort,Putter,3.5,4,0,1
+ABOVE_GROUND_LEVEL_MADRONE,Above Ground Level,Madrone,Putter,3,3,0,1
+ABOVE_GROUND_LEVEL_MANZANITA,Above Ground Level,Manzanita,Putter,3,3,0,2
+AQUAFLIGHT_PEACE_FROG,AquaFlight Discs,Peace Frog,Putter,3,3,0,1
+ARSENAL_C4,Arsenal Discs,C4,Putter,3,3,0,1
+AXIOM_ENVY,Axiom Discs,Envy,Putter,3,3,0,2
+AXIOM_PROXY,Axiom Discs,Proxy,Putter,3,3,-1,0.5
+BLACK_ZOMBIE_CHAINSAW,Black Zombie Disc Golf,Chainsaw,Putter,3,5,0,1
+CROSSLAP_CREDO,Crosslap Discgolf Parks,Credo,Putter,3,2,0,3
+DGA_BLOWFLY_II,Disc Golf Association,Blowfly II,Putter,3,2,-1,1
+DISCMANIA_P3_-_PUTT_&_APPROACH,Discmania,P3 - Putt & Approach,Putter,3,2,0,3
+DISCMANIA_P3X,Discmania,P3x,Putter,3,2,0,3
+DISCRAFT_CHALLENGER_OS,Discraft,Challenger OS,Putter,3,5,0,2.5
+DISCRAFT_LUNA,Discraft,Luna,Putter,3,4,0,2
+DISCRAFT_RINGER,Discraft,Ringer,Putter,3,4,0,2
+DISCRAFT_RINGER_GT,Discraft,Ringer GT,Putter,3,3,0,3
+DYNAMIC_DEPUTY,Dynamic Discs,Deputy,Putter,3,4,-1.5,0
+DYNAMIC_GAVEL,Dynamic Discs,Gavel,Putter,3,5,-2,0.5
+DYNAMIC_MARSHAL,Dynamic Discs,Marshal,Putter,3,4,0,1
+DYNAMIC_SLAMMER,Dynamic Discs,Slammer,Putter,3,2,0,3
+ELEMENT_PLUTONIUM,Element Discs,Plutonium,Putter,3,3,0,1
+FLY_HIGH_AK-47,Fly High Discs,AK-47,Putter,3,4,0,1
+FLY_HIGH_WHITE_WIDOW,Fly High Discs,White Widow,Putter,3,4,-1,0
+GALAXY_SATELLITE,Galaxy Disc Golf,Satellite,Putter,3,4,0,1
+GATEWAY_CHIEF,Gateway Disc Sports,Chief,Putter,3,3,0,1
+GATEWAY_CHIEF_OS,Gateway Disc Sports,Chief OS,Putter,3,3,0,2
+GATEWAY_DEVILHAWK,Gateway Disc Sports,Devilhawk,Putter,3,3,0,2
+GATEWAY_SHAMAN,Gateway Disc Sports,Shaman,Putter,3,3,-1,1
+INFINITE_TOMB,Infinite Discs,Tomb,Putter,3,4,0,1
+INNOVA_AERO,Innova,Aero,Putter,3,6,0,0
+INNOVA_AVIARX3,Innova,AviarX3,Putter,3,2,0,3
+INNOVA_AVIAR_3,Innova,Aviar 3,Putter,3,2,0,2
+INNOVA_AVIAR_XD,Innova,Aviar XD,Putter,3,4,-1,1
+INNOVA_BULLFROG,Innova,Bullfrog,Putter,3,1,0,1
+INNOVA_CLASSIC_ROC,Innova,Classic Roc,Putter,3,3,0,2
+INNOVA_COLT,Innova,Colt,Putter,3,4,-1,1
+INNOVA_DART,Innova,Dart,Putter,3,4,0,0
+INNOVA_HYDRA,Innova,Hydra,Putter,3,3,0,1
+INNOVA_MIRAGE,Innova,Mirage,Putter,3,4,-3,0
+INNOVA_PIG,Innova,Pig,Putter,3,1,0,3
+INNOVA_STUD,Innova,Stud,Putter,3,3,0,2
+KASTAPLAST_REKO,Kastaplast,Reko,Putter,3,3,0,1
+KESTREL_BEGINNER_MID-RANGE,Kestrel Outdoors,Beginner Mid-Range,Midrange,3,3,0,2
+LATITUDE_64_BITE,Latitude 64,Bite,Putter,3,3,0,0
+LATITUDE_64_PURE,Latitude 64,Pure,Putter,3,3,-1,1
+LATITUDE_64_RUBY,Latitude 64,Ruby,Putter,3,5,-3,1
+MVP_ATOM,MVP Disc Sports,Atom,Putter,3,3,0,1
+MVP_PARTICLE,MVP Disc Sports,Particle,Putter,3,3,0,2.5
+OBSISIAN_SPLINTER,Obsidian Discs,Splinter,Putter,3,2,0,3.5
+PLASTIC_ADDICTS_HABIT,Plastic Addicts,Habit,Putter,3,5,-1,0
+PRODIGY_A1,Prodigy Disc,A1,Putter,3,3,0,3
+PRODIGY_PA1,Prodigy Disc,PA1,Putter,3,3,0,2
+PRODIGY_PA2,Prodigy Disc,PA2,Putter,3,3,0,1
+PRODIGY_PA3,Prodigy Disc,PA3,Putter,3,4,0,1
+PRODIGY_PA4,Prodigy Disc,PA4,Putter,3,3,-1,1
+PRODISCUS_SPARTA,Prodiscus,Sparta,Putter,3,3,0,0.5
+REPTILIAN_STEGO,Reptilian Disc Golf,Stego,Putter,3,1,1,4
+RPM_RURU,RPM Discs/Disc Golf Aotearoa,Ruru,Putter,3,3,0,1
+RPM_TEMOKO,RPM Discs/Disc Golf Aotearoa,Temoko,Midrange,3,4,0,0
+RPM_TUI,RPM Discs/Disc Golf Aotearoa,Tui,Putter,3,4,-1,0
+STORM_THE_CRATER,Storm Disc Golf,The Crater,Putter,3,2,0,3
+WESTSIDE_CROWN,Westside Golf Discs,Crown,Putter,3,4,0,1
+WESTSIDE_MAIDEN,Westside Golf Discs,Maiden,Putter,3,4,0,1
+WESTSIDE_SHIELD,Westside Golf Discs,Shield,Putter,3,3,0,1
+WESTSIDE_SWAN,Westside Golf Discs,Swan,Putter,3,3,-1,0
+WESTSIDE_SWAN_REBORN,Westside Golf Discs,Swan Reborn,Putter,3,3,-2.5,0
+YIKUN_WINGS,Yikun Sports,Wings,Midrange,3,3,0,2
+MVP_ENTROPY,MVP Disc Sports,Entropy,Putter,3,3,0,4
+STREAMLINE_STABILIZER,Streamline Discs,Stabilizer,Putter,3,3,0,3
+MINT_PROFIT,Mint Discs,Profit,Putter,3,3,0,1
+MVP_ANODE,MVP Disc Sports,Anode,Putter,2.5,3,0,0.5
+MVP_ION,MVP Disc Sports,Ion,Putter,2.5,3,0,1.5
+MVP_SPIN,MVP Disc Sports,Spin,Putter,2.5,4,-2,0
+ABC_MONEY,ABC Discs,Money,Putter,2,3,0,2
+DAREDEVIL_BEAVER,Daredevil Discs,Beaver,Putter,2,3,0,1
+DAREDEVIL_BIGHORN,Daredevil Discs,Bighorn,Putter,2,3,0,1
+DAREDEVIL_GREAT_HORNED_OWL,Daredevil Discs,Great Horned Owl,Putter,2,3,0,1
+DAREDEVIL_POLAR_BEAR,Daredevil Discs,Polar Bear,Putter,2,3,-1,1
+DAREDEVIL_WOODCHUCK,Daredevil Discs,Woodchuck,Putter,2,2,-1,0
+DGA_BLUNT,Disc Golf Association,Blunt,Putter,2,2,-1,2
+DGA_GUMBPUTT,Disc Golf Association,Gumbputt,Putter,2,2,0,2
+DGA_POWERDRIVE,Disc Golf Association,Powerdrive,Putter,2,2,-2,1
+DGA_REEF,Disc Golf Association,Reef,Putter,2,2,-1,1
+DGA_STEADY,Disc Golf Association,Steady,Putter,2,4,0,2
+DGA_TITANIC,Disc Golf Association,Titanic,Putter,2,2,0,2
+DISC_KING_LEX,Disc King,Lex,Putter,2,3,0,1
+DISCMANIA_P1_-_MANIAC,Discmania,P1 - Maniac,Putter,2,3,0,0
+DISCMANIA_P1X,Discmania,P1x,Putter,2,3,0,0
+DISCMANIA_P2_-_PSYCHO,Discmania,P2 - Psycho,Putter,2,3,0,1
+DISCRAFT_APX,Discraft,APX,Putter,2,3,-1,1
+DISCRAFT_BANGER-GT,Discraft,Banger-GT,Putter,2,3,0,1
+DISCRAFT_CHALLENGER,Discraft,Challenger,Putter,2,3,0,2
+DISCRAFT_CHALLENGER_SS,Discraft,Challenger SS,Putter,2,4,-1,2
+DISCRAFT_FOCUS,Discraft,Focus,Putter,2,3,-1,2
+DISCRAFT_MAGNET,Discraft,Magnet,Putter,2,3,-1,2
+DISCRAFT_PUTT'R,Discraft,Putt'r,Putter,2,3,-2,1
+DISCRAFT_RATTLER_PUTTER,Discraft,Rattler Putter,Putter,2,3,-1,1
+DISCRAFT_ROACH,Discraft,Roach,Putter,2,4,0,1
+DYNAMIC_GUARD,Dynamic Discs,Guard,Putter,2,5,0,0.5
+DYNAMIC_JUDGE,Dynamic Discs,Judge,Putter,2,4,0,1
+DYNAMIC_WARDEN,Dynamic Discs,Warden,Putter,2,4,0,0.5
+ELEMENT_IRIDIUM,Element Discs,Iridium,Putter,2,3,0,2
+GALAXY_MAGNETON,Galaxy Disc Golf,Magneton,Putter,2,3,0,2
+GATEWAY_MAGIC,Gateway Disc Sports,Magic,Putter,2,3,-1,0
+GATEWAY_VOODOO,Gateway Disc Sports,Voodoo,Putter,2,3,0,2
+GATEWAY_WARLOCK,Gateway Disc Sports,Warlock,Putter,2,3,0,1
+GATEWAY_WARSPEAR,Gateway Disc Sports,Warspear,Putter,2,3,0,2.5
+GATEWAY_WIZARD,Gateway Disc Sports,Wizard,Putter,2,3,0,2
+GURU_MJØLNER,Guru Disc Golf,Mjølner,Putter,2,3,0,1
+INFINITE_MYTH,Infinite Discs,Myth,Putter,2,3,0,2
+INNOVA_AVIAR,Innova,Aviar,Putter,2,3,0,1
+INNOVA_NOVA,Innova,Nova,Putter,2,3,0,0
+INNOVA_RHYNO,Innova,Rhyno,Putter,2,1,0,3
+INNOVA_WHALE,Innova,Whale,Putter,2,3,0,1
+LATITUDE_64_CALTROP,Latitude 64,Caltrop,Putter,2,2,0,2
+LATITUDE_64_DAGGER,Latitude 64,Dagger,Putter,2,5,0,1
+LATITUDE_64_GAUNTLET,Latitude 64,Gauntlet,Putter,2,4,0,1
+LATITUDE_64_MACANA,Latitude 64,Macana,Putter,2,5,0,1
+LATITUDE_64_MERCY,Latitude 64,Mercy,Putter,2,4,0,1
+LATITUDE_64_SAREK,Latitude 64,Sarek,Putter,2,4,0,1.5
+LATITUDE_64_SINUS_AP,Latitude 64,Sinus AP,Putter,2,2,0,2
+LATITUDE_64_SINUS_SP,Latitude 64,Sinus SP,Putter,2,2,0,2
+LEGACY_CLOZER,Legacy Discs,Clozer,Putter,2,3,0,2
+LEGACY_CLUTCH,Legacy Discs,Clutch,Putter,2,3,0,1
+LEGACY_HUNTER,Legacy Discs,Hunter,Putter,2,4,0,0
+LEGACY_PROWLER,Legacy Discs,Prowler,Putter,2,3,0,1.5
+MILLENIUM_OMEGA,Millennium Golf Discs,Omega,Putter,2,3,-1,1
+HYZER_BOMB_TANK_-_PANZER,Hyzer Bomb,Tank - Panzer,Putter,2,2,0,3
+REPTILIAN_SCALE,Reptilian Disc Golf,Scale,Putter,2,1,0,3
+REPTILIAN_SERPENT,Reptilian Disc Golf,Serpent,Putter,2,2,0,0
+SKYQUEST_CHAINZILLA,Skyquest Discs,Chainzilla,Putter,2,3,-1,1
+STREAMLINE_PILOT,Streamline Discs,Pilot,Putter,2,5,-1,1
+UB_LEX,UB Disc Golf,Lex,Putter,2,3,0,1
+VIKING_KNIFE,Viking Discs,Knife,Putter,2,3,0,2
+VIKING_RUNE,Viking Discs,Rune,Putter,2,4,0,0
+YIKUN_GUI,Yikun Sports,Gui,Putter,2,3,0,2
+YIKUN_HAMMER,Yikun Sports,Hammer,Putter,2,3,0,3
+TOKYO_REI,Tokyo Discs,Rei,Putter,2,5,0,1
+INFINITE_SCARAB,Infinite Discs,Scarab,Putter,2,4,0,1
+DISCMANIA_LINK,Discmania,Link,Putter,2,3,0,1
+YIKUN_METEOR_HAMMER,Yikun Sports,Meteor Hammer,Putter,2,3,0,0
+STORM_RADAR,Storm Disc Golf,Radar,Putter,2,5,0,0.5
+INNOVA_BIRDIE,Innova,Birdie,Putter,1,2,0,0
+INNOVA_POLE_CAT,Innova,Pole Cat,Putter,1,3,0,0
+INNOVA_SONIC,Innova,Sonic,Putter,1,2,-4,0
+KASTAPLAST_BERG,Kastaplast,Berg,Putter,1,1,0,2
+KESTREL_BEGINNER_PUTTER,Kestrel Outdoors,Beginner Putter,Putter,1,3,0,1
+LATITUDE_64_BEETLE,Latitude 64,Beetle,Putter,1,7,-1,0
+LIGHTNING_#2_PUTTER,Lightning Discs,#2 Putter,Putter,1,2,-2,1
+LIGHTNING_#2_UPSHOT,Lightning Discs,#2 Upshot,Putter,1,3,-2,0
+LIGHTNING_UPSHOT,Lightning Discs,Upshot,Putter,1,3,-2,0
+YIKUN_CLAWS,Yikun Sports,Claws,Putter,1,2,0,0
+DISCMANIA_GUARDIAN_LION,Discmania,Guardian Lion,Putter,1,3,0,1

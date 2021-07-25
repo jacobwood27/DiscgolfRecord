@@ -1,0 +1,3 @@
+discs_path = "/home/woojac/proj/021_disc_golf_record/discs"
+discs_file = "my_discs.csv"
+rounds_path = "/home/woojac/proj/021_disc_golf_record/rounds"
