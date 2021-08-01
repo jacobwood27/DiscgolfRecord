@@ -1,51 +1,66 @@
 module DiscgolfRecord
 
-using CSV, DataFrames, Distances, DataStructures, JSON, Dates, TOML, LightXML
-
-export preview_course, COURSES
+using CSV, DataFrames, Distances, DataStructures, JSON, TOML, LightXML, TimeZones, Dates
+using Interpolations: LinearInterpolation
 
 COURSES_DIR = "data/courses/"
+DISCS_CSV = "data/discs.csv"
+SCORE_NAMES = Dict(
+    -3 => "ALBATROSS",
+    -2 => "EAGLE",
+    -1 => "BIRDIE",
+    0 => "PAR",
+    1 => "BOGEY",
+    2 => "DOUBLE BOGEY",
+    3 => "TRIPLE BOGEY",
+    4 => "QUADRUPLE BOGEY")
 
 struct Location
     lat::Float64
     lon::Float64
 end
-Location(d::AbstractDict) = Location(d["lat"], d["lon"])
 lat(l::Location) = l.lat
 lon(l::Location) = l.lon
+dist(l1::Location, l2::Location) = Distances.haversine((lon(l1),lat(l1)),(lon(l2), lat(l2)))
+Location(v) = Location(v[1], v[2])
 
-struct Tee
+struct POI
     id::String
     loc::Location
 end
-loc(t::Tee) = t.loc
-id(p::Tee) = p.id
-lat(p::Tee) = lat(loc(p))
-lon(p::Tee) = lon(loc(p))
-
-struct Pin
-    id::String
-    loc::Location
+empty_poi() = POI("",Location(0.0,0.0))
+loc(p::POI) = p.loc
+id(p::POI) = p.id
+lat(p::POI) = lat(loc(p))
+lon(p::POI) = lon(loc(p))
+dist(p1::POI, p2::POI) = dist(loc(p1), loc(p2))
+function get_elem(elem_id, V::Vector{POI})
+    for v in V
+        if id(v) == elem_id
+            return v
+        end
+    end
+    error("No element of name $elem_id")
 end
-loc(p::Pin) = p.loc
-id(p::Pin) = p.id
-lat(p::Pin) = lat(loc(p))
-lon(p::Pin) = lon(loc(p))
 
 struct Hole
     id::String
-    tees::Vector{Tee}
-    pins::Vector{Pin}
+    tees::Vector{POI}
+    pins::Vector{POI}
     pars::Dict{String,Dict{String, Int}}
 end
+empty_hole() = Hole("",[],[],Dict(""=>Dict(""=>0)))
 tees(h::Hole) = h.tees
 pins(h::Hole) = h.pins
 id(h::Hole) = h.id
 pars(h::Hole) = h.pars
-function par(h::Hole,t,p)
-    temp = pars(h)[id(t)]
-    temp[id(p)]
-end
+par(h::Hole,tee::String,pin::String) = pars(h)[tee][pin]
+par(h::Hole,tee::POI,pin::POI) = pars(h)[id(tee)][id(pin)]
+get_pin(h::Hole, id::String) = get_elem(id,pins(h))
+get_tee(h::Hole, id::String) = get_elem(id,tees(h))
+get_pin(h::Hole, p::POI) = get_elem(id(p),pins(h))
+get_tee(h::Hole, t::POI) = get_elem(id(t),tees(h))
+
 
 struct Course
     id::String
@@ -59,62 +74,96 @@ holes(c::Course) = c.holes
 name(c::Course) = c.name
 lat(c::Course) = lat(loc(c))
 lon(c::Course) = lon(loc(c))
+tees(c::Course) = tees.(holes(c))
+get_hole(c::Course, id::String) = get_elem(id,holes(c))
 
 struct Throw
     loc1::Location
     loc2::Location
     type::String
     res::String
-    pin::Pin
+    pin::POI
+    disc::String
 end
+loc1(t::Throw) = t.loc1 
+loc2(t::Throw) = t.loc2 
+lat(t::Throw) = lat(loc1(t))
+lon(t::Throw) = lon(loc1(t))
+disc(t::Throw) = t.disc
 
 struct PlayedHole
     hole::Hole
-    tee::Tee
-    pin::Pin
+    tee::POI
+    pin::POI
     throws::Vector{Throw}
     res::Int
+end
+throws(ph::PlayedHole) = ph.throws
+pin(ph::PlayedHole) = ph.pin
+tee(ph::PlayedHole) = ph.tee
+id(ph::PlayedHole) = id(ph.hole)
+score(ph::PlayedHole) = length(throws(ph))
+res(ph::PlayedHole) = ph.res
+par(ph::PlayedHole) = par(ph.hole, ph.tee, ph.pin)
+function res_name(ph::PlayedHole)
+    if haskey(SCORE_NAMES, res(ph))
+        return SCORE_NAMES[res(ph)]
+    else
+        return "BAD"
+    end
 end
 
 struct Round
     id::String
-    label::String
+    name::String
     notes::String
-    time::String
+    start_time::DateTime
+    end_time::DateTime
     course::Course
     holes::Vector{PlayedHole}
 end
+course(r::Round) = r.course
+id(r::Round) = r.id
+name(r::Round) = r.name
+notes(r::Round) = r.notes
+holes(r::Round) = r.holes
+date(r::Round) = Dates.format(r.start_time,"Y-m-d")
+score(r::Round) = sum([res(h) for h in holes(r)])
+num_holes(r::Round) = length(holes(r))
+par(r::Round) = sum([par(h) for h in holes(r)])
+total(r::Round) = par(r) + score(r)
+
 #get_scorecard(r::Round)
 #make_vis(r::Round)
 
-function read_round(input_csv, label, notes)
+# function read_round(input_csv, label, notes)
     
-    Round(id, label, time, course, holes, notes)
-end
+#     Round(id, label, time, course, holes, notes)
+# end
 
-function make_preview(r::Round, preview_file)
-    return -1
-end
+# function make_preview(r::Round, preview_file)
+#     return -1
+# end
 
-function dg_preview(input_csv; preview_file = "preview.kml")
+# function dg_preview(input_csv; preview_file = "preview.kml")
     
-    round = make_round(input_csv)
-    make_preview(round, preview_file)
+#     round = make_round(input_csv)
+#     make_preview(round, preview_file)
 
-end
+# end
 
 
 function read_courses_dir(courses_dir = COURSES_DIR)
     files = readdir(courses_dir)
 
-    D = Dict()
+    C = Course[]
     for f in files
         d = JSON.parsefile(joinpath(courses_dir, f), dicttype=OrderedDict)
         c = process_course_dict(d)
-        D[id(c)] = c
+        push!(C,c)
     end
     
-    D
+    C
 end
 
 function process_course_dict(d)
@@ -126,14 +175,14 @@ function process_course_dict(d)
     for (k,v) in d["holes"]
         h_id = String(k)
 
-        pins = Pin[]
+        pins = POI[]
         for (kk,vv) in v["pins"]
-            push!(pins, Pin(String(kk), Location(vv)))
+            push!(pins, POI(String(kk), Location(vv)))
         end
 
-        tees = Tee[]
+        tees = POI[]
         for (kk,vv) in v["tees"]
-            push!(tees, Tee(String(kk), Location(vv)))
+            push!(tees, POI(String(kk), Location(vv)))
         end
 
         ###make pars
@@ -153,209 +202,692 @@ function process_course_dict(d)
     Course(id, name, loc, holes)
 end
 
-function course_kml(c::Course)
-    l = ["""<?xml version="1.0" encoding="UTF-8"?>"""]
-    push!(l, """<kml xmlns="http://www.opengis.net/kml/2.2">""")
-    push!(l, " <Document>")
+# const COURSES = read_courses_dir()
+# const DISCS = CSV.read(DISCS_CSV, DataFrame)
+# const CONFIG = TOML.parsefile("my_config.toml")
+# const MY_DISCS = CSV.read(joinpath(CONFIG["discs_path"], CONFIG["discs_file"]), DataFrame)
+
+function infer_course(l::Location, courses::Vector{Course})
+    best_dist = 1000
+    best_course = courses[1]
+
+    for c in courses 
+        this_dist = dist(l, loc(c))
+        if this_dist < best_dist
+            best_dist = this_dist
+            best_course = c
+        end
+    end
+
+    if best_dist > 999
+        error("No courses found within 1 km.")
+    end
+
+    return best_course
     
-    push!(l, """  <Style id="tee_style">""")
-    push!(l, "   <IconStyle>")
-    push!(l, "    <Icon>")
-    push!(l, "     <href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>")
-    push!(l, "    </Icon>")
-    push!(l, "   </IconStyle>")
-    push!(l, "  </Style>")
-    
-    push!(l, """  <Style id="pin_style">""")
-    push!(l, "   <IconStyle>")
-    push!(l, "    <Icon>")
-    push!(l, "     <href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href>")
-    push!(l, "    </Icon>")
-    push!(l, "   </IconStyle>")
-    push!(l, "  </Style>")
+end
 
-    push!(l, """  <Style id="par_3_style">""")
-    push!(l, "   <LineStyle>")
-    push!(l, "    <width>1</width>")
-    push!(l, "   </LineStyle>")
-    push!(l, "  </Style>")
-
-    push!(l, """  <Style id="par_not3_style">""")
-    push!(l, "   <LineStyle>")
-    push!(l, "    <color>ff00ffff</color>")
-    push!(l, "    <width>1.5</width>")
-    push!(l, "   </LineStyle>")
-    push!(l, "  </Style>")
-
-    push!(l, "  <Placemark>")
-    push!(l, "   <name>$(name(c))</name>")
-    push!(l, "   <Point>")
-    push!(l, "    <coordinates>$(lon(c)),$(lat(c)),0</coordinates>")
-    push!(l, "   </Point>")
-    push!(l, "  </Placemark>")
-
-    #Lets draw all the teepads and pins, and lines that connect them all!
+function infer_tee(l::Location, c::Course)
+    best_dist = 100
+    best_hole = empty_hole()    #placeholder
+    best_tee = empty_poi()      #placeholder
     for h in holes(c)
-        for p in pins(h)
-            push!(l, "  <Placemark>")
-            push!(l, "   <name>$(id(h) * id(p))</name>")
-            push!(l, "   <styleUrl>#pin_style</styleUrl>")
-            push!(l, "   <Point>")
-            push!(l, "    <coordinates>$(lon(p)),$(lat(p)),0</coordinates>")
-            push!(l, "   </Point>")
-            push!(l, "  </Placemark>")
-        end
-
         for t in tees(h)
-            push!(l, "  <Placemark>")
-            push!(l, "   <name>$(id(h) * id(t))</name>")
-            push!(l, "   <styleUrl>#tee_style</styleUrl>")
-            push!(l, "   <Point>")
-            push!(l, "    <coordinates>$(lon(t)),$(lat(t)),0</coordinates>")
-            push!(l, "   </Point>")
-            push!(l, "  </Placemark>")
+            this_dist = dist(l,loc(t))
+            if this_dist < best_dist
+                best_dist = this_dist
+                best_hole = h
+                best_tee = t
+            end
         end
+    end
+    best_hole, best_tee, best_dist
+end
 
-        for  t in tees(h), p in pins(h)
 
-            push!(l, "  <Placemark>")
-            push!(l, "   <name> Hole $(id(h)), $(id(t)) ->  $(id(p))</name>")
-            
-            if par(h,t,p) == 3
-                push!(l, "   <styleUrl>#par_3_style</styleUrl>")
+
+function parse_round_raw_csv(round_raw_csv)
+    
+    COURSES = read_courses_dir()
+
+    df = CSV.read(round_raw_csv, DataFrame)
+    nrows = size(df,1)
+    
+    t_start = df[1,:time]
+    t_end = df[end,:time]
+
+    loc_i = Location(df[1,:lat], df[1,:lon])
+    c = infer_course(loc_i, COURSES)
+
+    PH = PlayedHole[]
+
+    cutoff_dists = [10,10,20] #this is placeholder - should be a better way to do this
+
+    #When we are just starting up, let's snag the teebox and the hole we are playing
+    cur_i = 1
+    h, t, _ = infer_tee(loc_i, c)
+
+    completed_read = false
+
+    # while !eof
+    while ~completed_read
+
+        #Now we need to find where the hole ends, this will happen when we mark near a pin of the current hole, and then near a tee of another hole, and then not near a tee of that hole
+        p = empty_poi() #to overwrite
+        next_t = empty_poi()
+        next_h = empty_hole()
+        idx = 0
+
+        for i in cur_i:nrows-1
+
+            r = df[i,:]
+            this_loc = Location(r.lat, r.lon)
+            pds = [dist(loc(p), this_loc) for p in pins(h)]
+            pd, p_num = findmin(pds)
+            p = pins(h)[p_num]
+
+            if i==nrows-1
+                idx = i+1
+                completed_read = true
+                break
+            end
+
+            n_r = df[i+1,:]
+            n_loc = Location(n_r.lat, n_r.lon)
+            next_h, next_t, bd = infer_tee(n_loc, c)
+
+            nn_r = df[i+2,:]
+            nn_loc = Location(nn_r.lat, nn_r.lon)
+            ndd = dist(nn_loc, loc(next_t))
+
+            if pd<cutoff_dists[1] && bd<cutoff_dists[2] && ndd>cutoff_dists[3] #then we have found the last putt of the hole!
+                idx = i
+                break
+            end
+        end
+        
+
+        #Now we know what throws were made on the hole, which teebox, and which pin. We can make some Throws and a PlayedHole!
+        i1 = cur_i
+        i2 = idx-1
+        T = Throw[]
+        for i in i1:i2
+            loc1 = Location(df[i,:lat], df[i,:lon])
+            loc2 = Location(df[i+1,:lat], df[i+1,:lon])
+            if i==i1
+                type = "DRIVE"
+                loc1 = loc(t)
             else
-                push!(l, "   <styleUrl>#par_not3_style</styleUrl>")
+                type = "THROW"
             end
 
-            push!(l, "   <LineString>")
-            push!(l, "    <coordinates>")
-            push!(l, "     $(lon(t)),$(lat(t))")
-            push!(l, "     $(lon(p)),$(lat(p))")
-            push!(l, "    </coordinates>")
-            push!(l, "   </LineString>")
-            push!(l, "  </Placemark>")
+            if i==i2
+                res = "BASKET"
+                loc2 = loc(p)
+            else
+                res = ""
+            end
+
+            pin = p
+            disc = df[i,:disc]
+
+            thrw = Throw(loc1, loc2, type, res, pin, disc)
+
+            push!(T, thrw)
         end
+
+        s = length(T) - par(h, t, p)
+        ph = PlayedHole(h,t,p,T,s)
+        push!(PH, ph)
+
+        t = next_t
+        h = next_h
+        cur_i = idx+1
 
     end
+
+    start_minute = Dates.format(t_start, "Y-m-d-H-M")
+    round_id = start_minute * "_" * id(c)
+    name = "Sample Name"
+    notes = "Sample Notes"
+    start_time = t_start
+    end_time = t_end
+
+    Round(round_id, name, notes, start_time, end_time, c, PH)
+end
+
+
+function guess_and_check(round_raw_csv)
+
+    r = parse_round_raw_csv(round_raw_csv)
     
-    push!(l, " </Document>")
-    push!(l, "</kml>")
-    l
-end
+    df_raw = CSV.read(round_raw_csv, DataFrame)
 
-function preview_course(c::Course)
-    kml = course_kml(c)
-    filename = id(c) * "_preview.kml"
-    open(filename,"w") do f
-        for line in kml
-            println(f, line)
-        end
-    end
-end
+    json_both = draw_both(r,df_raw)
 
-const COURSES = read_courses_dir()
-const CONFIG = TOML.parsefile("my_config.toml")
-
-
-
-
-"""
-    interpolate_gpx(gpx_file, times) -> Vector{Location}
-    
-Interpolates a gpx file at the given timestamps 
-"""
-function interpolate_gpx(gpx_file, times)
-    dfmt = DateFormat("y-m-d H:M:S")
-    ts_df = CSV.read(times, DataFrame, datarow=2, header=[:time, :disc], dateformat=dfmt)
-
-
-    
-end
-
-function make_round_csv(timestamp_file, tracking_file)
-    interpolate_gpx(tracking_file, timestamp_file)
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Utilities
-
-function make_course_json(tees_file, pins_file, label, name, loc)
-
-    warning("Note, par is initialized to 3 for all hole combinations. Edit resulting json manually.")
-
-    holes_dict = OrderedDict()
-
-    tees_df = CSV.read(tees_file, DataFrame)
-    pins_df = CSV.read(pins_file, DataFrame)
-
-    hole_nums = unique(tees_df.hole)
-    for h in hole_nums
-        hole_dict = OrderedDict()
-        
-        td = OrderedDict()
-        for r in eachrow(tees_df)
-            if r.hole == h
-                ismissing(r.variation) ? key = "" : key = r.variation 
-                td[key] = OrderedDict(:lat => r.lat, :lon => r.lon)
-            end
-        end
-        hole_dict[:tees] = td
-
-        pd = OrderedDict()
-        for r in eachrow(pins_df)
-            if r.hole == h
-                ismissing(r.variation) ? key = "" : key = r.variation
-                pd[key] = OrderedDict(:lat => r.lat, :lon => r.lon)
-            end
-        end
-        hole_dict[:pins] = pd
-
-        sd = OrderedDict()
-        for r in eachrow(tees_df)
-            if r.hole == h
-                ismissing(r.variation) ? key = "" : key = r.variation 
-                
-                sdd = OrderedDict()
-                for rr in eachrow(pins_df)
-                    if rr.hole == h
-                        ismissing(rr.variation) ? key2 = "" : key2 = rr.variation
-                        sdd[key2] = 3
-                    end
-                end
-
-                sd[key] = sdd
-            end
-        end
-        hole_dict[:pars] = sd
-        
-        holes_dict[h] = hole_dict
+    open("check_round.json", "w") do f
+        JSON.print(f, json_both, 2)
     end
 
+end
+
+function draw_both(r::Round, df)
     D = OrderedDict()
-    D[:id] = label
-    D[:name] = name
-    D[:loc] = OrderedDict(:lat => loc[1], :lon => loc[2])
-    D[:holes] = holes_dict
+    D["type"] = "FeatureCollection"
 
-    open("$label.json", "w") do f
+    #Some metadata up front
+    config = TOML.parsefile("my_config.toml")
+    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
+    discs = OrderedDict[]
+    for r in eachrow(my_discs)
+        push!(discs, OrderedDict(
+            "id" => r.my_id,
+            "image" => r.image
+        ))
+    end
+    D["discs"] = discs
+
+    summary = []
+    running = 0
+    for h in holes(r)
+        running += res(h)
+        h_summary = OrderedDict(
+            "hole" => id(h),
+            "tee" => id(tee(h)),
+            "pin" => id(pin(h)),
+            "par" => par(h),
+            "score" => score(h),
+            "running" => running
+        )
+        push!(summary, h_summary)
+    end
+    D["summary"] = summary
+
+
+    features = OrderedDict[]
+
+    #Now let's put all the raw marks on the map
+    for row in eachrow(df)
+        d = OrderedDict()
+        d["type"] = "Feature"
+        d["properties"] = OrderedDict(
+            "thing" => "raw_mark",
+            "disc_name" => row.disc,
+            "name"  => "$(rownumber(row))"
+            )
+        d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [row.lon, row.lat]
+            )
+            push!(features, d)
+    end
+
+    #Now draw the course
+    c = course(r)
+    for h in holes(c)
+        for t in tees(h)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "tee",
+                "name"  => id(h) * id(t)
+                )
+            d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [lon(t), lat(t)]
+            )
+            push!(features, d)
+        end
+
+        for p in pins(h)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "pin",
+                "name" => id(h) * id(p))
+            d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [lon(p), lat(p)]
+            )
+            push!(features, d)
+        end
+    end
+
+    #Now draw the throws as they were interpreted
+    for h in holes(r)
+        for t in h.throws
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "throw",
+                "hole_res" => h.res)
+            d["geometry"] = OrderedDict(
+                "type" => "LineString",
+                "coordinates" => [[lon(loc1(t)), lat(loc1(t))],[lon(loc2(t)), lat(loc2(t))]]
+            )
+            push!(features, d)
+        end
+    end
+
+    D["features"] = features
+
+    D
+end
+
+feet(x) = round(x*3.2808)
+llstring(x) = string(round(x, digits=5))
+
+function append_all_throws!(df,r::Round)
+    for h in holes(r)
+        shot=0
+        
+        for t in throws(h)
+            shot += 1
+
+            if score(h) == 1
+                t_res = "ACE"
+            elseif shot == 1
+                t_res = "DRIVE"
+            elseif shot == score(h)
+                t_res = "MAKE"
+            else
+                t_res = "THROW"
+            end
+
+            push!(df, (
+                        date(r) |> string,
+                        id(course(r)),
+                        id(r),
+                        id(h),
+                        shot |> string,
+                        disc(t),
+                        lat(loc1(t)) |> llstring,
+                        lon(loc1(t)) |> llstring,
+                        lat(loc2(t)) |> llstring,
+                        lon(loc2(t)) |> llstring,
+                        lat(pin(h)) |> llstring,
+                        lon(pin(h)) |> llstring,
+                        dist(loc1(t), loc2(t)) |> feet |> string,
+                        dist(loc1(t), loc(pin(h))) |> feet |> string,
+                        res_name(h),
+                        t_res)
+                )
+        end
+    end
+end
+
+function append_all_holes!(df, r::Round)
+    for h in holes(r)
+        push!(df, (
+                    date(r) |> string,
+                    id(course(r)),
+                    id(r),
+                    id(h),
+                    par(h) |> string,
+                    id(tee(h)),
+                    id(pin(h)),
+                    dist(tee(h), pin(h)) |> feet |> string,
+                    dist(loc1(throws(h)[1]), loc2(throws(h)[1])) |> feet |> string,
+                    dist(loc1(throws(h)[end]), loc2(throws(h)[end])) |> feet |> string,
+                    score(h) |> string,
+                    res_name(h))
+            )
+    end
+end
+
+function append_round!(df, r::Round)
+    push!(df, (
+        date(r) |> string,
+        id(course(r)),
+        id(r),
+        num_holes(r) |> string,
+        par(r) |> string,
+        total(r) |> string,
+        score(r) |> string
+    ))
+end
+
+function get_dash_json(throws_df, holes_df, rounds_df)
+    D = OrderedDict()
+
+    #Recent Scores
+    recent_scores = OrderedDict()
+    recent_scores["labels"] = rounds_df.date
+    recent_scores["datasets"] = [OrderedDict(
+        "label" => "Recent Scores",
+        "data" => rounds_df.result,
+        "backgroundColor" => "rgba(60,141,188,0.9)",
+        "borderColor" => "rgba(60,141,188,0.8)",
+        "pointRadius" => 5,
+        "pointColor" => "#3b8bba",
+        "pointStrokeColor" => "rgba(60,141,188,1)",
+        "pointHighlightFill" => "#fff",
+        "pointHighlightStroke" => "rgba(60,141,188,1)",
+        "showLine" => true,
+        "fill" => false
+    )]
+    D["recent_scores"] = recent_scores
+
+    #Disc Bag
+    config = TOML.parsefile("my_config.toml")
+    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
+    discs_db = CSV.read(DISCS_CSV, DataFrame, type=String)
+    all_discs = innerjoin(my_discs, discs_db, on = :disc_id => :id)
+    discs = OrderedDict[]
+    for r in eachrow(all_discs)
+        push!(discs, OrderedDict(
+            "id" => r.my_id,
+            "image" => r.image,
+            "mold" => "$(r.brand) $(r.mold)",
+            "plastic" => r.plastic,
+            "weight" => r.weight,
+            "numbers" => "$(r.speed), $(r.glide), $(r.turn), $(r.fade)"
+        ))
+    end
+    D["discs"] = discs
+
+
+    #All Rounds
+    rounds = OrderedDict[]
+    COURSES = read_courses_dir()
+    for r in eachrow(rounds_df)
+        c_name = "Unknown"
+        for c in COURSES
+            if r.course == id(c)
+                c_name = name(c)
+                break
+            end
+        end
+        push!(rounds, OrderedDict(
+            "date" => r.date,
+            "course" => c_name,
+            "result" => r.result
+        ))
+    end
+    D["rounds"] = rounds
+
+    D
+end
+
+function save_round(round_raw_csv)
+
+    r = parse_round_raw_csv(round_raw_csv)
+    config = TOML.parsefile("my_config.toml")
+
+    #write out round.json
+
+    #append all throws to all_throws.csv
+    throws_csv = joinpath(config["dg_dir"],"stats","all_throws.csv")
+    throws_df = CSV.read(throws_csv, DataFrame, type=String)
+    append_all_throws!(throws_df,r)
+    # CSV.write(throws_csv, throws_df)
+
+    #append all holes to all_holes.csv
+    holes_csv = joinpath(config["dg_dir"],"stats","all_holes.csv")
+    holes_df = CSV.read(holes_csv, DataFrame, type=String)
+    append_all_holes!(holes_df,r)
+    # CSV.write(holes_csv, holes_df)
+
+    #append round to all_rounds.csv
+    rounds_csv = joinpath(config["dg_dir"],"stats","all_rounds.csv")
+    rounds_df = CSV.read(rounds_csv, DataFrame, type=String)
+    append_round!(rounds_df,r)
+    # CSV.write(rounds_csv, rounds_df)
+
+    #write dash.json with updated data
+    dash_json = joinpath(config["dg_dir"],"stats","dash.json")
+    dash = get_dash_json(throws_df, holes_df, rounds_df)
+    open(dash_json, "w") do f
+        JSON.print(f, dash, 2)
+    end
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function parse_round(round_csv; id="test_id", label="test_label", notes="test_notes", time="test_time")
+    df = CSV.read(round_csv, DataFrame)
+    nrows = size(df,1)
+    
+    c_id = infer_course(df[1,:lat], df[1,:lon])
+    c = COURSES[c_id]
+
+    PH = PlayedHole[]
+
+    cutoff_dist = 20 #this is placeholder - should be a better way to do this
+
+    #When we are just starting up, let's snag the teebox and the hole we are playing
+    cur_i = 1
+    h_id,t_id,_ = infer_tee(df[1,:lat], df[1,:lon], c)
+    cur_i = 1
+
+    completed_read = false
+
+    # while !eof
+    while ~completed_read
+
+        #Now we need to find where the hole ends, this will happen when we mark near a pin of the current hole, and then near a tee of another hole, and then not near a tee of that hole
+        h = get_hole(c,h_id)
+        p = pins(h)[1] #to overwrite
+        idx = 0
+
+        next_h_id = ""
+        next_t_id = ""
+        for i in cur_i:nrows-1
+
+            pds = [Distances.haversine((lon(p), lat(p)), (df[i,:lon], df[i,:lat])) for p in pins(h)]
+            pd, p_num = findmin(pds)
+            p = pins(h)[p_num]
+
+            if i==nrows-1
+                idx = i+1
+                completed_read = true
+                break
+            end
+
+            next_h_id, next_t_id, bd = infer_tee(df[i+1,:lat], df[i+1,:lon], c)
+            ndd = Distances.haversine((df[i+1,:lon], df[i+1,:lat]), (df[i+2,:lon], df[i+2,:lat]))
+
+            if pd<cutoff_dist && bd<cutoff_dist && ndd>cutoff_dist #then we have found the last putt of the hole!
+                println(i)
+                idx = i
+                break
+            end
+        end
+
+        t = get_tee(h,t_id)
+        
+
+        #Now we know what throws were made on the hole, which teebox, and which pin. We can make some Throws and a PlayedHole!
+        i1 = cur_i
+        i2 = idx-1
+        T = Throw[]
+        for i in i1:i2
+            loc1 = Location(df[i,:lat], df[i,:lon])
+            loc2 = Location(df[i+1,:lat], df[i+1,:lon])
+            if i==i1
+                type = "DRIVE"
+                loc1 = loc(get_tee(h,t_id))
+            else
+                type = "THROW"
+            end
+
+            if i==i2
+                res = "BASKET"
+                loc2 = loc(p)
+            else
+                res = ""
+            end
+
+            pin = p
+            disc = df[i,:disc]
+
+            thrw = Throw(loc1, loc2, type, res, pin, disc)
+
+            push!(T, thrw)
+        end
+
+        s = length(T) - par(h, t, p)
+        ph = PlayedHole(h,t,p,T,s)
+        push!(PH, ph)
+
+        t_id = next_t_id
+        h_id = next_h_id
+        println(h_id)
+        cur_i = idx+1
+
+    end
+
+    Round(id, label, notes, time, c, PH)
+end
+
+
+function illustrate(r::Round; out="test_vis.json")
+    
+    D = OrderedDict()
+    D["type"] = "FeatureCollection"
+
+    #Some metadata up front
+    config = TOML.parsefile("my_config.toml")
+    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
+    discs = OrderedDict[]
+    for r in eachrow(my_discs)
+        push!(discs, OrderedDict(
+            "id" => r.my_id,
+            "image" => r.image
+        ))
+    end
+    D["discs"] = discs
+    
+    #Then the course
+    c = course(r)
+
+    features = OrderedDict[]
+    for h in holes(c)
+        for t in tees(h)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "tee",
+                "name"  => id(h) * id(t)
+                )
+            d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [lon(t), lat(t)]
+            )
+            push!(features, d)
+        end
+
+        for p in pins(h)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "pin",
+                "name" => id(h) * id(p))
+            d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [lon(p), lat(p)]
+            )
+            push!(features, d)
+        end
+        
+        for t in tees(h), p in pins(h)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "tee->pin")
+            d["geometry"] = OrderedDict(
+                "type" => "LineString",
+                "coordinates" => [[lon(t), lat(t)],[lon(p), lat(p)]]
+            )
+            push!(features, d)
+        end
+    end
+
+    for h in holes(r)
+        
+        for (i,t) in enumerate(h.throws)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "throw",
+                "hole_res" => h.res)
+            d["geometry"] = OrderedDict(
+                "type" => "LineString",
+                "coordinates" => [[lon(t.loc1), lat(t.loc1)],[lon(t.loc2), lat(t.loc2)]]
+            )
+            push!(features, d)
+            # temp_p = new_child(temp, "Placemark")
+            # temp_n = new_child(temp_p, "name")
+            # add_text(temp_n, "Throw $i")
+            # temp_s = new_child(temp_p, "styleUrl")
+            # if h.res < 0
+            #     add_text(temp_s, "#under_style")
+            # elseif h.res == 0
+            #     add_text(temp_s, "#par_style")
+            # else
+            #     add_text(temp_s, "#over_style")
+            # end
+            # temp_ls = new_child(temp_p, "LineString")
+            # temp_c = new_child(temp_ls, "coordinates")
+            # add_text(temp_c, "$(lon(t.loc1)),$(lat(t.loc1))\n$(lon(t.loc2)),$(lat(t.loc2))")
+        end
+
+        for (i,t) in enumerate(h.throws)
+            d = OrderedDict()
+            d["type"] = "Feature"
+            d["properties"] = OrderedDict(
+                "thing" => "disc",
+                "disc_name" => t.disc)
+            d["geometry"] = OrderedDict(
+                "type" => "Point",
+                "coordinates" => [lon(t.loc1), lat(t.loc1)]
+            )
+            push!(features, d)
+        end
+        # for (i,t) in enumerate(h.throws)
+        #     temp_p = new_child(temp, "Placemark")
+        #     temp_n = new_child(temp_p, "name")
+        #     add_text(temp_n, "Throw $i")
+        #     temp_s = new_child(temp_p, "styleUrl")
+        #     add_text(temp_s, "#$(t.disc)")
+        #     temp_ls = new_child(temp_p, "Point")
+        #     temp_c = new_child(temp_ls, "coordinates")
+        #     add_text(temp_c, "$(lon(t.loc1)),$(lat(t.loc1)),0")
+        # end
+    end
+
+    D["features"] = features
+    
+    open(out, "w") do f
         JSON.print(f, D, 2)
     end
-
 end
+
+
+
+
 
 
 end

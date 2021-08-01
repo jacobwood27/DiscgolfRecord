@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Folder id="Visualization">
+    <Style id="tee_style">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="pin_style">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="SIDEWINDER-1">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>pink_champion_sidewinder.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="JUDGE-1">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>pink_judge.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="DESTROYER-1">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>pink_destroyer.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="BUZZZ-1">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>green_buzzz.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="under_style">
+      <LineStyle>
+        <color>FF00FF14</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="par_style">
+      <LineStyle>
+        <color>FFFF7800</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Style id="over_style">
+      <LineStyle>
+        <color>FF1400FF</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <Document>
+      <name>Course</name>
+      <Document>
+        <name>1</name>
+        <Placemark>
+          <name>1</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.058426,33.079323,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>1A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.057793,33.079936,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>1B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.0576,33.080083,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>1C</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.05775,33.079653,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>1,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.057793,33.079936
+-117.058426,33.079323</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>1,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.0576,33.080083
+-117.058426,33.079323</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>1,  -&gt; C</name>
+          <LineString>
+            <coordinates>-117.05775,33.079653
+-117.058426,33.079323</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>2</name>
+        <Placemark>
+          <name>2</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.057614,33.079671,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>2A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.057858,33.078936,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>2B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.057442,33.078795,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>2C</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.057485,33.078599,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>2,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.057858,33.078936
+-117.057614,33.079671</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>2,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.057442,33.078795
+-117.057614,33.079671</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>2,  -&gt; C</name>
+          <LineString>
+            <coordinates>-117.057485,33.078599
+-117.057614,33.079671</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>3</name>
+        <Placemark>
+          <name>3</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.057286,33.079325,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>3A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.05739,33.080298,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>3B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.057448,33.080702,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>3,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.05739,33.080298
+-117.057286,33.079325</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>3,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.057448,33.080702
+-117.057286,33.079325</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>4</name>
+        <Placemark>
+          <name>4</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.057761,33.08042,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>4A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.058426,33.079869,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>4B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.05878,33.079462,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>4,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.058426,33.079869
+-117.057761,33.08042</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>4,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.05878,33.079462
+-117.057761,33.08042</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>5</name>
+        <Placemark>
+          <name>5</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.059303,33.079287,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>5A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.060186,33.079112,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>5,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.060186,33.079112
+-117.059303,33.079287</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>6</name>
+        <Placemark>
+          <name>6</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.061119,33.080951,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>6A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061125,33.081402,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>6,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061125,33.081402
+-117.061119,33.080951</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>7</name>
+        <Placemark>
+          <name>7</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.060881,33.081498,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>7A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.06105,33.082122,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>7,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.06105,33.082122
+-117.060881,33.081498</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>8</name>
+        <Placemark>
+          <name>8</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.060985,33.082325,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>8A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.060744,33.082899,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>8,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.060744,33.082899
+-117.060985,33.082325</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>9</name>
+        <Placemark>
+          <name>9</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.060996,33.083465,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>9A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061307,33.084126,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>9,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061307,33.084126
+-117.060996,33.083465</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>10</name>
+        <Placemark>
+          <name>10</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.061425,33.084562,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>10A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061661,33.083696,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>10,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061661,33.083696
+-117.061425,33.084562</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>11</name>
+        <Placemark>
+          <name>11</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.061817,33.083458,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>11A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061685,33.084532,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>11B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061776,33.084673,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>11C</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061664,33.084811,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>11,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061685,33.084532
+-117.061817,33.083458</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>11,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.061776,33.084673
+-117.061817,33.083458</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>11,  -&gt; C</name>
+          <LineString>
+            <coordinates>-117.061664,33.084811
+-117.061817,33.083458</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>12</name>
+        <Placemark>
+          <name>12</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.06205,33.08464,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>12A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062324,33.084051,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>12B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062243,33.083887,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>12,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.062324,33.084051
+-117.06205,33.08464</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>12,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.062243,33.083887
+-117.06205,33.08464</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>13</name>
+        <Placemark>
+          <name>13</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.062232,33.083667,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>13A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062002,33.082782,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>13B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061807,33.082853,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>13C</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062077,33.082548,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>13,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.062002,33.082782
+-117.062232,33.083667</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>13,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.061807,33.082853
+-117.062232,33.083667</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>13,  -&gt; C</name>
+          <LineString>
+            <coordinates>-117.062077,33.082548
+-117.062232,33.083667</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>14</name>
+        <Placemark>
+          <name>14</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.061173,33.082546,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>14A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061253,33.081462,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>14B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061275,33.081161,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>14,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061253,33.081462
+-117.061173,33.082546</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>14,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.061275,33.081161
+-117.061173,33.082546</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>15</name>
+        <Placemark>
+          <name>15</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.061564,33.081755,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>15A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061776,33.081031,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>15,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061776,33.081031
+-117.061564,33.081755</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>16</name>
+        <Placemark>
+          <name>16</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.062125,33.081177,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>16A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062514,33.080501,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>16B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062871,33.080606,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>16,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.062514,33.080501
+-117.062125,33.081177</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>16,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.062871,33.080606
+-117.062125,33.081177</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>17</name>
+        <Placemark>
+          <name>17</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.062235,33.080489,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>17A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.062358,33.079835,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>17B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.06257,33.079912,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>17,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.062358,33.079835
+-117.062235,33.080489</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>17,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.06257,33.079912
+-117.062235,33.080489</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>18</name>
+        <Placemark>
+          <name>18</name>
+          <styleUrl>#tee_style</styleUrl>
+          <Point>
+            <coordinates>-117.06245,33.079649,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>18A</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061446,33.079357,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>18B</name>
+          <styleUrl>#pin_style</styleUrl>
+          <Point>
+            <coordinates>-117.061299,33.079534,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>18,  -&gt; A</name>
+          <LineString>
+            <coordinates>-117.061446,33.079357
+-117.06245,33.079649</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>18,  -&gt; B</name>
+          <LineString>
+            <coordinates>-117.061299,33.079534
+-117.06245,33.079649</coordinates>
+          </LineString>
+        </Placemark>
+      </Document>
+    </Document>
+    <Document>
+      <name>Round</name>
+      <Document>
+        <name>1</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.058426,33.079323
+-117.058013890136,33.0800170861416</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.058013890136,33.0800170861416
+-117.057801183665,33.0799169784905</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057801183665,33.0799169784905
+-117.057793,33.079936</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.058426,33.079323,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.058013890136,33.0800170861416,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.057801183665,33.0799169784905,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>2</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057614,33.079671
+-117.057606947167,33.078747434225</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057606947167,33.078747434225
+-117.057805462048,33.0789233755023</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057805462048,33.0789233755023
+-117.057858,33.078936</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.057614,33.079671,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.057606947167,33.078747434225,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.057805462048,33.0789233755023,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>3</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057286,33.079325
+-117.05737102583,33.0803893772941</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.05737102583,33.0803893772941
+-117.057427658621,33.0806652315561</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057427658621,33.0806652315561
+-117.057448,33.080702</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.057286,33.079325,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.05737102583,33.0803893772941,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.057427658621,33.0806652315561,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>4</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.057761,33.08042
+-117.058558513084,33.0797303281751</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.058558513084,33.0797303281751
+-117.05870229327,33.0794238016944</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.05870229327,33.0794238016944
+-117.05878,33.079462</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.057761,33.08042,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.058558513084,33.0797303281751,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.05870229327,33.0794238016944,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>5</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.059303,33.079287
+-117.060141392523,33.0791135552533</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.060141392523,33.0791135552533
+-117.060186,33.079112</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.059303,33.079287,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.060141392523,33.0791135552533,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>6</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061119,33.080951
+-117.061113450043,33.081332593478</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061113450043,33.081332593478
+-117.061125,33.081402</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061119,33.080951,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061113450043,33.081332593478,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>7</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.060881,33.081498
+-117.061031416402,33.082183370936</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061031416402,33.082183370936
+-117.061022172925,33.0821233425013</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061022172925,33.0821233425013
+-117.06105,33.082122</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.060881,33.081498,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061031416402,33.082183370936,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061022172925,33.0821233425013,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>8</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.060985,33.082325
+-117.0609045218,33.0826065940115</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.0609045218,33.0826065940115
+-117.060813076179,33.0828360923867</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.060813076179,33.0828360923867
+-117.060744,33.082899</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.060985,33.082325,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.0609045218,33.0826065940115,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.060813076179,33.0828360923867,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>9</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.060996,33.083465
+-117.061285911866,33.0841697812174</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061285911866,33.0841697812174
+-117.061307,33.084126</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.060996,33.083465,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061285911866,33.0841697812174,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>10</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061425,33.084562
+-117.061649543632,33.0836381649417</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061649543632,33.0836381649417
+-117.061661,33.083696</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061425,33.084562,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061649543632,33.0836381649417,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>11</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061817,33.083458
+-117.06154662735,33.0842382445566</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06154662735,33.0842382445566
+-117.061653651933,33.0847890246038</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061653651933,33.0847890246038
+-117.061540952343,33.0847943961072</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 4</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061540952343,33.0847943961072
+-117.061664,33.084811</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061817,33.083458,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.06154662735,33.0842382445566,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061653651933,33.0847890246038,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 4</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061540952343,33.0847943961072,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>12</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06205,33.08464
+-117.06216458659,33.0839660120191</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06216458659,33.0839660120191
+-117.062243,33.083887</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#DESTROYER-1</styleUrl>
+          <Point>
+            <coordinates>-117.06205,33.08464,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.06216458659,33.0839660120191,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>13</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062232,33.083667
+-117.06210935842,33.0825611206989</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06210935842,33.0825611206989
+-117.061831001443,33.0828709893334</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061831001443,33.0828709893334
+-117.061807,33.082853</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#DESTROYER-1</styleUrl>
+          <Point>
+            <coordinates>-117.062232,33.083667,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.06210935842,33.0825611206989,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061831001443,33.0828709893334,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>14</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061173,33.082546
+-117.061103125095,33.0818871529966</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061103125095,33.0818871529966
+-117.061191177371,33.0814728252606</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061191177371,33.0814728252606
+-117.061253,33.081462</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061173,33.082546,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.061103125095,33.0818871529966,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061191177371,33.0814728252606,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>15</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061564,33.081755
+-117.061744169111,33.0810479501677</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061744169111,33.0810479501677
+-117.061790534443,33.0810192168555</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.061790534443,33.0810192168555
+-117.061776,33.081031</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#DESTROYER-1</styleUrl>
+          <Point>
+            <coordinates>-117.061564,33.081755,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061744169111,33.0810479501677,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.061790534443,33.0810192168555,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>16</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062125,33.081177
+-117.062459604525,33.0804726811352</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062459604525,33.0804726811352
+-117.062514,33.080501</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#DESTROYER-1</styleUrl>
+          <Point>
+            <coordinates>-117.062125,33.081177,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.062459604525,33.0804726811352,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>17</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062235,33.080489
+-117.062502763467,33.0798726553516</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062502763467,33.0798726553516
+-117.062501533997,33.0798847217636</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#par_style</styleUrl>
+          <LineString>
+            <coordinates>-117.062501533997,33.0798847217636
+-117.06257,33.079912</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#BUZZZ-1</styleUrl>
+          <Point>
+            <coordinates>-117.062235,33.080489,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.062502763467,33.0798726553516,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 3</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.062501533997,33.0798847217636,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+      <Document>
+        <name>18</name>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06245,33.079649
+-117.06130810878,33.0795199159482</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#under_style</styleUrl>
+          <LineString>
+            <coordinates>-117.06130810878,33.0795199159482
+-117.061299,33.079534</coordinates>
+          </LineString>
+        </Placemark>
+        <Placemark>
+          <name>Throw 1</name>
+          <styleUrl>#SIDEWINDER-1</styleUrl>
+          <Point>
+            <coordinates>-117.06245,33.079649,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Throw 2</name>
+          <styleUrl>#JUDGE-1</styleUrl>
+          <Point>
+            <coordinates>-117.06130810878,33.0795199159482,0</coordinates>
+          </Point>
+        </Placemark>
+      </Document>
+    </Document>
+  </Folder>
+</kml>

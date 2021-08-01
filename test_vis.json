@@ -1,0 +1,2996 @@
+{
+  "type": "FeatureCollection",
+  "discs": [
+    {
+      "id": "SIDEWINDER-1",
+      "image": "pink_champion_sidewinder.png"
+    },
+    {
+      "id": "JUDGE-1",
+      "image": "pink_judge.png"
+    },
+    {
+      "id": "DESTROYER-1",
+      "image": "pink_destroyer.png"
+    },
+    {
+      "id": "BUZZZ-1",
+      "image": "green_buzzz.png"
+    }
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.058426,
+          33.079323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "1A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057793,
+          33.079936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "1B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0576,
+          33.080083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "1C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.05775,
+          33.079653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058426,
+            33.079323
+          ],
+          [
+            -117.057793,
+            33.079936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058426,
+            33.079323
+          ],
+          [
+            -117.0576,
+            33.080083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058426,
+            33.079323
+          ],
+          [
+            -117.05775,
+            33.079653
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057614,
+          33.079671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "2A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057858,
+          33.078936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "2B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057442,
+          33.078795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "2C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057485,
+          33.078599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057614,
+            33.079671
+          ],
+          [
+            -117.057858,
+            33.078936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057614,
+            33.079671
+          ],
+          [
+            -117.057442,
+            33.078795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057614,
+            33.079671
+          ],
+          [
+            -117.057485,
+            33.078599
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057286,
+          33.079325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "3A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.05739,
+          33.080298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "3B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057448,
+          33.080702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057286,
+            33.079325
+          ],
+          [
+            -117.05739,
+            33.080298
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057286,
+            33.079325
+          ],
+          [
+            -117.057448,
+            33.080702
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057761,
+          33.08042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "4A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.058426,
+          33.079869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "4B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.05878,
+          33.079462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057761,
+            33.08042
+          ],
+          [
+            -117.058426,
+            33.079869
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057761,
+            33.08042
+          ],
+          [
+            -117.05878,
+            33.079462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.059303,
+          33.079287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "5A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060186,
+          33.079112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.059303,
+            33.079287
+          ],
+          [
+            -117.060186,
+            33.079112
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061119,
+          33.080951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "6A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061125,
+          33.081402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061119,
+            33.080951
+          ],
+          [
+            -117.061125,
+            33.081402
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060881,
+          33.081498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "7A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06105,
+          33.082122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060881,
+            33.081498
+          ],
+          [
+            -117.06105,
+            33.082122
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060985,
+          33.082325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "8A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060744,
+          33.082899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060985,
+            33.082325
+          ],
+          [
+            -117.060744,
+            33.082899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060996,
+          33.083465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "9A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061307,
+          33.084126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060996,
+            33.083465
+          ],
+          [
+            -117.061307,
+            33.084126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061425,
+          33.084562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "10A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061661,
+          33.083696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061425,
+            33.084562
+          ],
+          [
+            -117.061661,
+            33.083696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061817,
+          33.083458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "11A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061685,
+          33.084532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "11B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061776,
+          33.084673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "11C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061664,
+          33.084811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061817,
+            33.083458
+          ],
+          [
+            -117.061685,
+            33.084532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061817,
+            33.083458
+          ],
+          [
+            -117.061776,
+            33.084673
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061817,
+            33.083458
+          ],
+          [
+            -117.061664,
+            33.084811
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06205,
+          33.08464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "12A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062324,
+          33.084051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "12B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062243,
+          33.083887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06205,
+            33.08464
+          ],
+          [
+            -117.062324,
+            33.084051
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06205,
+            33.08464
+          ],
+          [
+            -117.062243,
+            33.083887
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062232,
+          33.083667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "13A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062002,
+          33.082782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "13B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061807,
+          33.082853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "13C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062077,
+          33.082548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062232,
+            33.083667
+          ],
+          [
+            -117.062002,
+            33.082782
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062232,
+            33.083667
+          ],
+          [
+            -117.061807,
+            33.082853
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062232,
+            33.083667
+          ],
+          [
+            -117.062077,
+            33.082548
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061173,
+          33.082546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "14A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061253,
+          33.081462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "14B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061275,
+          33.081161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061173,
+            33.082546
+          ],
+          [
+            -117.061253,
+            33.081462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061173,
+            33.082546
+          ],
+          [
+            -117.061275,
+            33.081161
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061564,
+          33.081755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "15A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061776,
+          33.081031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061564,
+            33.081755
+          ],
+          [
+            -117.061776,
+            33.081031
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062125,
+          33.081177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "16A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062514,
+          33.080501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "16B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062871,
+          33.080606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062125,
+            33.081177
+          ],
+          [
+            -117.062514,
+            33.080501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062125,
+            33.081177
+          ],
+          [
+            -117.062871,
+            33.080606
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062235,
+          33.080489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "17A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062358,
+          33.079835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "17B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06257,
+          33.079912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062235,
+            33.080489
+          ],
+          [
+            -117.062358,
+            33.079835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062235,
+            33.080489
+          ],
+          [
+            -117.06257,
+            33.079912
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee",
+        "name": "18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06245,
+          33.079649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "18A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061446,
+          33.079357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "pin",
+        "name": "18B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061299,
+          33.079534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06245,
+            33.079649
+          ],
+          [
+            -117.061446,
+            33.079357
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "tee->pin"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06245,
+            33.079649
+          ],
+          [
+            -117.061299,
+            33.079534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058426,
+            33.079323
+          ],
+          [
+            -117.058013890136,
+            33.0800170861416
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058013890136,
+            33.0800170861416
+          ],
+          [
+            -117.057801183665,
+            33.0799169784905
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057801183665,
+            33.0799169784905
+          ],
+          [
+            -117.057793,
+            33.079936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.058426,
+          33.079323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.058013890136,
+          33.0800170861416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057801183665,
+          33.0799169784905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057614,
+            33.079671
+          ],
+          [
+            -117.057606947167,
+            33.078747434225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057606947167,
+            33.078747434225
+          ],
+          [
+            -117.057805462048,
+            33.0789233755023
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057805462048,
+            33.0789233755023
+          ],
+          [
+            -117.057858,
+            33.078936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057614,
+          33.079671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057606947167,
+          33.078747434225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057805462048,
+          33.0789233755023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057286,
+            33.079325
+          ],
+          [
+            -117.05737102583,
+            33.0803893772941
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.05737102583,
+            33.0803893772941
+          ],
+          [
+            -117.057427658621,
+            33.0806652315561
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057427658621,
+            33.0806652315561
+          ],
+          [
+            -117.057448,
+            33.080702
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057286,
+          33.079325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.05737102583,
+          33.0803893772941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057427658621,
+          33.0806652315561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.057761,
+            33.08042
+          ],
+          [
+            -117.058558513084,
+            33.0797303281751
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.058558513084,
+            33.0797303281751
+          ],
+          [
+            -117.05870229327,
+            33.0794238016944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.05870229327,
+            33.0794238016944
+          ],
+          [
+            -117.05878,
+            33.079462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.057761,
+          33.08042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.058558513084,
+          33.0797303281751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.05870229327,
+          33.0794238016944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.059303,
+            33.079287
+          ],
+          [
+            -117.060141392523,
+            33.0791135552533
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060141392523,
+            33.0791135552533
+          ],
+          [
+            -117.060186,
+            33.079112
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.059303,
+          33.079287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060141392523,
+          33.0791135552533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061119,
+            33.080951
+          ],
+          [
+            -117.061113450043,
+            33.081332593478
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061113450043,
+            33.081332593478
+          ],
+          [
+            -117.061125,
+            33.081402
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061119,
+          33.080951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061113450043,
+          33.081332593478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060881,
+            33.081498
+          ],
+          [
+            -117.061031416402,
+            33.082183370936
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061031416402,
+            33.082183370936
+          ],
+          [
+            -117.061022172925,
+            33.0821233425013
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061022172925,
+            33.0821233425013
+          ],
+          [
+            -117.06105,
+            33.082122
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060881,
+          33.081498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061031416402,
+          33.082183370936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061022172925,
+          33.0821233425013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060985,
+            33.082325
+          ],
+          [
+            -117.0609045218,
+            33.0826065940115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.0609045218,
+            33.0826065940115
+          ],
+          [
+            -117.060813076179,
+            33.0828360923867
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060813076179,
+            33.0828360923867
+          ],
+          [
+            -117.060744,
+            33.082899
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060985,
+          33.082325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0609045218,
+          33.0826065940115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060813076179,
+          33.0828360923867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.060996,
+            33.083465
+          ],
+          [
+            -117.061285911866,
+            33.0841697812174
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061285911866,
+            33.0841697812174
+          ],
+          [
+            -117.061307,
+            33.084126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.060996,
+          33.083465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061285911866,
+          33.0841697812174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061425,
+            33.084562
+          ],
+          [
+            -117.061649543632,
+            33.0836381649417
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061649543632,
+            33.0836381649417
+          ],
+          [
+            -117.061661,
+            33.083696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061425,
+          33.084562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061649543632,
+          33.0836381649417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061817,
+            33.083458
+          ],
+          [
+            -117.06154662735,
+            33.0842382445566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06154662735,
+            33.0842382445566
+          ],
+          [
+            -117.061653651933,
+            33.0847890246038
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061653651933,
+            33.0847890246038
+          ],
+          [
+            -117.061540952343,
+            33.0847943961072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061540952343,
+            33.0847943961072
+          ],
+          [
+            -117.061664,
+            33.084811
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061817,
+          33.083458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06154662735,
+          33.0842382445566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061653651933,
+          33.0847890246038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061540952343,
+          33.0847943961072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06205,
+            33.08464
+          ],
+          [
+            -117.06216458659,
+            33.0839660120191
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06216458659,
+            33.0839660120191
+          ],
+          [
+            -117.062243,
+            33.083887
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "DESTROYER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06205,
+          33.08464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06216458659,
+          33.0839660120191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062232,
+            33.083667
+          ],
+          [
+            -117.06210935842,
+            33.0825611206989
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06210935842,
+            33.0825611206989
+          ],
+          [
+            -117.061831001443,
+            33.0828709893334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061831001443,
+            33.0828709893334
+          ],
+          [
+            -117.061807,
+            33.082853
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "DESTROYER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062232,
+          33.083667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06210935842,
+          33.0825611206989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061831001443,
+          33.0828709893334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061173,
+            33.082546
+          ],
+          [
+            -117.061103125095,
+            33.0818871529966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061103125095,
+            33.0818871529966
+          ],
+          [
+            -117.061191177371,
+            33.0814728252606
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061191177371,
+            33.0814728252606
+          ],
+          [
+            -117.061253,
+            33.081462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061173,
+          33.082546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061103125095,
+          33.0818871529966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061191177371,
+          33.0814728252606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061564,
+            33.081755
+          ],
+          [
+            -117.061744169111,
+            33.0810479501677
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061744169111,
+            33.0810479501677
+          ],
+          [
+            -117.061790534443,
+            33.0810192168555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.061790534443,
+            33.0810192168555
+          ],
+          [
+            -117.061776,
+            33.081031
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "DESTROYER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061564,
+          33.081755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061744169111,
+          33.0810479501677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.061790534443,
+          33.0810192168555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062125,
+            33.081177
+          ],
+          [
+            -117.062459604525,
+            33.0804726811352
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062459604525,
+            33.0804726811352
+          ],
+          [
+            -117.062514,
+            33.080501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "DESTROYER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062125,
+          33.081177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062459604525,
+          33.0804726811352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062235,
+            33.080489
+          ],
+          [
+            -117.062502763467,
+            33.0798726553516
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062502763467,
+            33.0798726553516
+          ],
+          [
+            -117.062501533997,
+            33.0798847217636
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": 0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.062501533997,
+            33.0798847217636
+          ],
+          [
+            -117.06257,
+            33.079912
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "BUZZZ-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062235,
+          33.080489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062502763467,
+          33.0798726553516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.062501533997,
+          33.0798847217636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06245,
+            33.079649
+          ],
+          [
+            -117.06130810878,
+            33.0795199159482
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "throw",
+        "hole_res": -1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -117.06130810878,
+            33.0795199159482
+          ],
+          [
+            -117.061299,
+            33.079534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "SIDEWINDER-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06245,
+          33.079649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "thing": "disc",
+        "disc_name": "JUDGE-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06130810878,
+          33.0795199159482
+        ]
+      }
+    }
+  ]
+}
