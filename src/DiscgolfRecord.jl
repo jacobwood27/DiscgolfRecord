@@ -202,11 +202,6 @@ function process_course_dict(d)
     Course(id, name, loc, holes)
 end
 
-# const COURSES = read_courses_dir()
-# const DISCS = CSV.read(DISCS_CSV, DataFrame)
-# const CONFIG = TOML.parsefile("my_config.toml")
-# const MY_DISCS = CSV.read(joinpath(CONFIG["discs_path"], CONFIG["discs_file"]), DataFrame)
-
 function infer_course(l::Location, courses::Vector{Course})
     best_dist = 1000
     best_course = courses[1]
@@ -599,6 +594,7 @@ function get_dash_json(throws_df, holes_df, rounds_df)
             end
         end
         push!(rounds, OrderedDict(
+            "id" => r.round,
             "date" => r.date,
             "course" => c_name,
             "result" => r.result
