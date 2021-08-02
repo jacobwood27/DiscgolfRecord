@@ -3,8 +3,12 @@ module DiscgolfRecord
 using CSV, DataFrames, Distances, DataStructures, JSON, TOML, LightXML, TimeZones, Dates
 using Interpolations: LinearInterpolation
 
-COURSES_DIR = "data/courses/"
-DISCS_CSV = "data/discs.csv"
+export guess_and_check
+
+STATS_DIR = joinpath(homedir(),"dg_stats")
+
+COURSES_DIR = joinpath(@__DIR__,"..","data","courses")
+DISCS_CSV = joinpath(@__DIR__,"..","data","discs.csv")
 SCORE_NAMES = Dict(
     -3 => "ALBATROSS",
     -2 => "EAGLE",
@@ -127,7 +131,7 @@ id(r::Round) = r.id
 name(r::Round) = r.name
 notes(r::Round) = r.notes
 holes(r::Round) = r.holes
-date(r::Round) = Dates.format(r.start_time,"Y-m-d")
+date(r::Round) = Dates.format(r.start_time,"yyyy-mm-dd")
 score(r::Round) = sum([res(h) for h in holes(r)])
 num_holes(r::Round) = length(holes(r))
 par(r::Round) = sum([par(h) for h in holes(r)])
@@ -341,7 +345,7 @@ function parse_round_raw_csv(round_raw_csv)
 
     end
 
-    start_minute = Dates.format(t_start, "Y-m-d-H-M")
+    start_minute = Dates.format(t_start, "yyyy-mm-dd-HH-MM")
     round_id = start_minute * "_" * id(c)
     name = "Sample Name"
     notes = "Sample Notes"
@@ -371,8 +375,7 @@ function draw_both(r::Round, df)
     D["type"] = "FeatureCollection"
 
     #Some metadata up front
-    config = TOML.parsefile("my_config.toml")
-    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
+    my_discs = CSV.read(joinpath(STATS_DIR, "discs", "discs.csv"), DataFrame)
     discs = OrderedDict[]
     for r in eachrow(my_discs)
         push!(discs, OrderedDict(
@@ -563,9 +566,9 @@ function get_dash_json(throws_df, holes_df, rounds_df)
     )]
     D["recent_scores"] = recent_scores
 
+
     #Disc Bag
-    config = TOML.parsefile("my_config.toml")
-    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
+    my_discs = CSV.read(joinpath(STATS_DIR, "discs", "discs.csv"), DataFrame)
     discs_db = CSV.read(DISCS_CSV, DataFrame, type=String)
     all_discs = innerjoin(my_discs, discs_db, on = :disc_id => :id)
     discs = OrderedDict[]
@@ -608,30 +611,29 @@ end
 function save_round(round_raw_csv)
 
     r = parse_round_raw_csv(round_raw_csv)
-    config = TOML.parsefile("my_config.toml")
 
     #write out round.json
 
     #append all throws to all_throws.csv
-    throws_csv = joinpath(config["dg_dir"],"stats","all_throws.csv")
+    throws_csv = joinpath(STATS_DIR,"stats","all_throws.csv")
     throws_df = CSV.read(throws_csv, DataFrame, type=String)
     append_all_throws!(throws_df,r)
-    # CSV.write(throws_csv, throws_df)
+    CSV.write(throws_csv, throws_df)
 
     #append all holes to all_holes.csv
-    holes_csv = joinpath(config["dg_dir"],"stats","all_holes.csv")
+    holes_csv = joinpath(STATS_DIR,"stats","all_holes.csv")
     holes_df = CSV.read(holes_csv, DataFrame, type=String)
     append_all_holes!(holes_df,r)
-    # CSV.write(holes_csv, holes_df)
+    CSV.write(holes_csv, holes_df)
 
     #append round to all_rounds.csv
-    rounds_csv = joinpath(config["dg_dir"],"stats","all_rounds.csv")
+    rounds_csv = joinpath(STATS_DIR,"stats","all_rounds.csv")
     rounds_df = CSV.read(rounds_csv, DataFrame, type=String)
     append_round!(rounds_df,r)
-    # CSV.write(rounds_csv, rounds_df)
+    CSV.write(rounds_csv, rounds_df)
 
     #write dash.json with updated data
-    dash_json = joinpath(config["dg_dir"],"stats","dash.json")
+    dash_json = joinpath(STATS_DIR,"stats","dash.json")
     dash = get_dash_json(throws_df, holes_df, rounds_df)
     open(dash_json, "w") do f
         JSON.print(f, dash, 2)
@@ -639,250 +641,6 @@ function save_round(round_raw_csv)
 
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function parse_round(round_csv; id="test_id", label="test_label", notes="test_notes", time="test_time")
-    df = CSV.read(round_csv, DataFrame)
-    nrows = size(df,1)
-    
-    c_id = infer_course(df[1,:lat], df[1,:lon])
-    c = COURSES[c_id]
-
-    PH = PlayedHole[]
-
-    cutoff_dist = 20 #this is placeholder - should be a better way to do this
-
-    #When we are just starting up, let's snag the teebox and the hole we are playing
-    cur_i = 1
-    h_id,t_id,_ = infer_tee(df[1,:lat], df[1,:lon], c)
-    cur_i = 1
-
-    completed_read = false
-
-    # while !eof
-    while ~completed_read
-
-        #Now we need to find where the hole ends, this will happen when we mark near a pin of the current hole, and then near a tee of another hole, and then not near a tee of that hole
-        h = get_hole(c,h_id)
-        p = pins(h)[1] #to overwrite
-        idx = 0
-
-        next_h_id = ""
-        next_t_id = ""
-        for i in cur_i:nrows-1
-
-            pds = [Distances.haversine((lon(p), lat(p)), (df[i,:lon], df[i,:lat])) for p in pins(h)]
-            pd, p_num = findmin(pds)
-            p = pins(h)[p_num]
-
-            if i==nrows-1
-                idx = i+1
-                completed_read = true
-                break
-            end
-
-            next_h_id, next_t_id, bd = infer_tee(df[i+1,:lat], df[i+1,:lon], c)
-            ndd = Distances.haversine((df[i+1,:lon], df[i+1,:lat]), (df[i+2,:lon], df[i+2,:lat]))
-
-            if pd<cutoff_dist && bd<cutoff_dist && ndd>cutoff_dist #then we have found the last putt of the hole!
-                println(i)
-                idx = i
-                break
-            end
-        end
-
-        t = get_tee(h,t_id)
-        
-
-        #Now we know what throws were made on the hole, which teebox, and which pin. We can make some Throws and a PlayedHole!
-        i1 = cur_i
-        i2 = idx-1
-        T = Throw[]
-        for i in i1:i2
-            loc1 = Location(df[i,:lat], df[i,:lon])
-            loc2 = Location(df[i+1,:lat], df[i+1,:lon])
-            if i==i1
-                type = "DRIVE"
-                loc1 = loc(get_tee(h,t_id))
-            else
-                type = "THROW"
-            end
-
-            if i==i2
-                res = "BASKET"
-                loc2 = loc(p)
-            else
-                res = ""
-            end
-
-            pin = p
-            disc = df[i,:disc]
-
-            thrw = Throw(loc1, loc2, type, res, pin, disc)
-
-            push!(T, thrw)
-        end
-
-        s = length(T) - par(h, t, p)
-        ph = PlayedHole(h,t,p,T,s)
-        push!(PH, ph)
-
-        t_id = next_t_id
-        h_id = next_h_id
-        println(h_id)
-        cur_i = idx+1
-
-    end
-
-    Round(id, label, notes, time, c, PH)
-end
-
-
-function illustrate(r::Round; out="test_vis.json")
-    
-    D = OrderedDict()
-    D["type"] = "FeatureCollection"
-
-    #Some metadata up front
-    config = TOML.parsefile("my_config.toml")
-    my_discs = CSV.read(joinpath(config["dg_dir"], "discs", "discs.csv"), DataFrame)
-    discs = OrderedDict[]
-    for r in eachrow(my_discs)
-        push!(discs, OrderedDict(
-            "id" => r.my_id,
-            "image" => r.image
-        ))
-    end
-    D["discs"] = discs
-    
-    #Then the course
-    c = course(r)
-
-    features = OrderedDict[]
-    for h in holes(c)
-        for t in tees(h)
-            d = OrderedDict()
-            d["type"] = "Feature"
-            d["properties"] = OrderedDict(
-                "thing" => "tee",
-                "name"  => id(h) * id(t)
-                )
-            d["geometry"] = OrderedDict(
-                "type" => "Point",
-                "coordinates" => [lon(t), lat(t)]
-            )
-            push!(features, d)
-        end
-
-        for p in pins(h)
-            d = OrderedDict()
-            d["type"] = "Feature"
-            d["properties"] = OrderedDict(
-                "thing" => "pin",
-                "name" => id(h) * id(p))
-            d["geometry"] = OrderedDict(
-                "type" => "Point",
-                "coordinates" => [lon(p), lat(p)]
-            )
-            push!(features, d)
-        end
-        
-        for t in tees(h), p in pins(h)
-            d = OrderedDict()
-            d["type"] = "Feature"
-            d["properties"] = OrderedDict(
-                "thing" => "tee->pin")
-            d["geometry"] = OrderedDict(
-                "type" => "LineString",
-                "coordinates" => [[lon(t), lat(t)],[lon(p), lat(p)]]
-            )
-            push!(features, d)
-        end
-    end
-
-    for h in holes(r)
-        
-        for (i,t) in enumerate(h.throws)
-            d = OrderedDict()
-            d["type"] = "Feature"
-            d["properties"] = OrderedDict(
-                "thing" => "throw",
-                "hole_res" => h.res)
-            d["geometry"] = OrderedDict(
-                "type" => "LineString",
-                "coordinates" => [[lon(t.loc1), lat(t.loc1)],[lon(t.loc2), lat(t.loc2)]]
-            )
-            push!(features, d)
-            # temp_p = new_child(temp, "Placemark")
-            # temp_n = new_child(temp_p, "name")
-            # add_text(temp_n, "Throw $i")
-            # temp_s = new_child(temp_p, "styleUrl")
-            # if h.res < 0
-            #     add_text(temp_s, "#under_style")
-            # elseif h.res == 0
-            #     add_text(temp_s, "#par_style")
-            # else
-            #     add_text(temp_s, "#over_style")
-            # end
-            # temp_ls = new_child(temp_p, "LineString")
-            # temp_c = new_child(temp_ls, "coordinates")
-            # add_text(temp_c, "$(lon(t.loc1)),$(lat(t.loc1))\n$(lon(t.loc2)),$(lat(t.loc2))")
-        end
-
-        for (i,t) in enumerate(h.throws)
-            d = OrderedDict()
-            d["type"] = "Feature"
-            d["properties"] = OrderedDict(
-                "thing" => "disc",
-                "disc_name" => t.disc)
-            d["geometry"] = OrderedDict(
-                "type" => "Point",
-                "coordinates" => [lon(t.loc1), lat(t.loc1)]
-            )
-            push!(features, d)
-        end
-        # for (i,t) in enumerate(h.throws)
-        #     temp_p = new_child(temp, "Placemark")
-        #     temp_n = new_child(temp_p, "name")
-        #     add_text(temp_n, "Throw $i")
-        #     temp_s = new_child(temp_p, "styleUrl")
-        #     add_text(temp_s, "#$(t.disc)")
-        #     temp_ls = new_child(temp_p, "Point")
-        #     temp_c = new_child(temp_ls, "coordinates")
-        #     add_text(temp_c, "$(lon(t.loc1)),$(lat(t.loc1)),0")
-        # end
-    end
-
-    D["features"] = features
-    
-    open(out, "w") do f
-        JSON.print(f, D, 2)
-    end
-end
-
-
-
 
 
 
