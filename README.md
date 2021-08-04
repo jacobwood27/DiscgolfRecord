@@ -8,3 +8,4 @@
  4. Run save_round.jl to copy the files and update the statistics appropriately
  5. Git add, commit, push the dg_stats dir
  
+If course does not exist within 1km, a new course is guessed and initialized.
