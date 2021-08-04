@@ -3,7 +3,7 @@ module DiscgolfRecord
 using CSV, DataFrames, Distances, DataStructures, JSON, TOML, LightXML, TimeZones, Dates
 using Interpolations: LinearInterpolation
 
-export guess_and_check
+export guess_and_check, parse_round_raw_csv, id
 
 STATS_DIR = joinpath(homedir(),"dg_stats")
 
@@ -356,7 +356,7 @@ function parse_round_raw_csv(round_raw_csv)
 end
 
 
-function guess_and_check(round_raw_csv)
+function guess_and_check(round_raw_csv, out="check_round.json")
 
     r = parse_round_raw_csv(round_raw_csv)
     
@@ -364,7 +364,7 @@ function guess_and_check(round_raw_csv)
 
     json_both = draw_both(r,df_raw)
 
-    open("check_round.json", "w") do f
+    open(out, "w") do f
         JSON.print(f, json_both, 2)
     end
 

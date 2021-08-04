@@ -66,9 +66,9 @@ function interpolate_gpx(timestamp_file, gpx_file, out)
 end
 
 
-function write_html()
+function write_html(loc)
     html = joinpath(@__DIR__,"guess_n_check_template.html")
-    cp(html, "index.html", force=true)
+    cp(html, joinpath(loc,"index.html"), force=true)
 end
 
 
@@ -95,17 +95,26 @@ args = parse_commandline()
 interpolate_gpx(args["csv"], args["gpx"], args["out"])
 println("Round has been parsed and written to $(args["out"])")
 
-guess_and_check(args["out"])
+r = parse_round_raw_csv(args["out"])
+round_id = id(r)
+mkdir(round_id)
 
-write_html()
+cp(args["csv"],joinpath(round_id,args["csv"]), force=true)
+cp(args["gpx"],joinpath(round_id,args["gpx"]), force=true)
+cp(args["out"],joinpath(round_id,args["out"]), force=true)
+
+guess_and_check(joinpath(round_id, args["out"]), joinpath(round_id, "check_round.json"))
+
+write_html(round_id)
 
 Threads.@spawn begin
     while true
-        watch_file(args["out"])
-        println("Detected change in $(args["out"])")
-        guess_and_check(args["out"])
+        watch_file(joinpath(round_id,args["out"]))
+        println("Detected change in $(joinpath(round_id,args["out"]))")
+        r = parse_round_raw_csv(joinpath(round_id,args["out"]))
+        guess_and_check(joinpath(round_id, args["out"]), joinpath(round_id, "check_round.json"))
     end
 end
 
-serve(port=8080)
+serve(port=8080, dir=round_id)
 
