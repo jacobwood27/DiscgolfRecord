@@ -27,7 +27,7 @@ end
 
 function read_timestamp(timestamp_file)
     df = DataFrame(time=Dates.DateTime[], disc=String[])
-    f=CSV.File(timestamp_file, delim=',', datarow=2, header=false)
+    f=CSV.File(timestamp_file, delim=',', datarow=1, header=false)
     dfmt = DateFormat("yyyy-mm-ddTHH:MM:SSzzzz")
     for (i,r) in enumerate(f)
         t = DateTime(ZonedDateTime(r.Column1, dfmt),UTC)
